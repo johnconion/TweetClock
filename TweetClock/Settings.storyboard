@@ -26,7 +26,7 @@
         <scene sceneID="DhW-Fr-NwG">
             <objects>
                 <tableViewController id="ORO-T1-aHt" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XOl-Xf-ZbG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XOl-Xf-ZbG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -46,15 +46,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitterアカウント設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eii-en-a2l">
-                                                    <rect key="frame" x="30" y="11" width="354" height="30"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Eii-en-a2l" secondAttribute="trailing" constant="10" id="4AV-yF-Ga7"/>
-                                                <constraint firstItem="Eii-en-a2l" firstAttribute="leading" secondItem="qer-7H-D7k" secondAttribute="leadingMargin" constant="10" id="GQA-rk-Pwd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Eii-en-a2l" secondAttribute="trailing" id="4AV-yF-Ga7"/>
+                                                <constraint firstItem="Eii-en-a2l" firstAttribute="leading" secondItem="qer-7H-D7k" secondAttribute="leadingMargin" id="GQA-rk-Pwd"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Eii-en-a2l" secondAttribute="bottom" id="PCM-ts-IHq"/>
                                                 <constraint firstItem="Eii-en-a2l" firstAttribute="top" secondItem="qer-7H-D7k" secondAttribute="topMargin" id="iw6-Q8-PsP"/>
                                             </constraints>
@@ -68,15 +68,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字色設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-I6-62q">
-                                                    <rect key="frame" x="30" y="11" width="354" height="30"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="nq3-I6-62q" secondAttribute="trailing" constant="10" id="BIf-0U-DY6"/>
-                                                <constraint firstItem="nq3-I6-62q" firstAttribute="leading" secondItem="KMe-bC-9et" secondAttribute="leadingMargin" constant="10" id="IeE-eg-4Tn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nq3-I6-62q" secondAttribute="trailing" id="BIf-0U-DY6"/>
+                                                <constraint firstItem="nq3-I6-62q" firstAttribute="leading" secondItem="KMe-bC-9et" secondAttribute="leadingMargin" id="IeE-eg-4Tn"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="nq3-I6-62q" secondAttribute="bottom" id="MhQ-Im-Wvw"/>
                                                 <constraint firstItem="nq3-I6-62q" firstAttribute="top" secondItem="KMe-bC-9et" secondAttribute="topMargin" id="Vo9-WY-r5b"/>
                                             </constraints>
@@ -90,15 +90,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景色設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbt-zu-Cet">
-                                                    <rect key="frame" x="30" y="11" width="354" height="30"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bbt-zu-Cet" secondAttribute="trailing" constant="10" id="WWk-UV-Vth"/>
-                                                <constraint firstItem="bbt-zu-Cet" firstAttribute="leading" secondItem="5By-4u-GUY" secondAttribute="leadingMargin" constant="10" id="gLX-3B-od8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bbt-zu-Cet" secondAttribute="trailing" id="WWk-UV-Vth"/>
+                                                <constraint firstItem="bbt-zu-Cet" firstAttribute="leading" secondItem="5By-4u-GUY" secondAttribute="leadingMargin" id="gLX-3B-od8"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="bbt-zu-Cet" secondAttribute="bottom" id="nPU-K3-bmn"/>
                                                 <constraint firstItem="bbt-zu-Cet" firstAttribute="top" secondItem="5By-4u-GUY" secondAttribute="topMargin" id="xJ8-1W-wM8"/>
                                             </constraints>
