@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0ACA502453CF1E0022E987 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0ACA4F2453CF1E0022E987 /* IQKeyboardManagerSwift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
 		7C84A0802453CAF10016AE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* ViewController.swift */; };
 		7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0812453CAF10016AE58 /* Main.storyboard */; };
 		7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0842453CAF30016AE58 /* Assets.xcassets */; };
 		7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */; };
+		9F078B33232876B81D3460AB /* Pods_TweetClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6C15D58F30E861BE651EF9 /* Pods_TweetClock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B6CE7D5882E9FF2EB9EC2C7 /* Pods-TweetClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetClock.debug.xcconfig"; path = "Target Support Files/Pods-TweetClock/Pods-TweetClock.debug.xcconfig"; sourceTree = "<group>"; };
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		7C84A0842453CAF30016AE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C84A0872453CAF30016AE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C84A0892453CAF30016AE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6C15D58F30E861BE651EF9 /* Pods_TweetClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AA5134FEB183EB5E6B40F3 /* Pods-TweetClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetClock.release.xcconfig"; path = "Target Support Files/Pods-TweetClock/Pods-TweetClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F078B33232876B81D3460AB /* Pods_TweetClock.framework in Frameworks */,
+				7C0ACA502453CF1E0022E987 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		598CA8B926CA3FE94BA3E12B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B6CE7D5882E9FF2EB9EC2C7 /* Pods-TweetClock.debug.xcconfig */,
+				D0AA5134FEB183EB5E6B40F3 /* Pods-TweetClock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E08471C903AF1F64B97B179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB6C15D58F30E861BE651EF9 /* Pods_TweetClock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C84A06F2453CAF10016AE58 = {
 			isa = PBXGroup;
 			children = (
 				7C84A07A2453CAF10016AE58 /* TweetClock */,
 				7C84A0792453CAF10016AE58 /* Products */,
+				598CA8B926CA3FE94BA3E12B /* Pods */,
+				5E08471C903AF1F64B97B179 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,15 +100,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C84A08C2453CAF30016AE58 /* Build configuration list for PBXNativeTarget "TweetClock" */;
 			buildPhases = (
+				879237C8B3BCFBD675FD4AF5 /* [CP] Check Pods Manifest.lock */,
 				7C84A0742453CAF10016AE58 /* Sources */,
 				7C84A0752453CAF10016AE58 /* Frameworks */,
 				7C84A0762453CAF10016AE58 /* Resources */,
+				509D7CBDCC1F074EC5CC29FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TweetClock;
+			packageProductDependencies = (
+				7C0ACA4F2453CF1E0022E987 /* IQKeyboardManagerSwift */,
+			);
 			productName = TweetClock;
 			productReference = 7C84A0782453CAF10016AE58 /* TweetClock.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 7C84A06F2453CAF10016AE58;
+			packageReferences = (
+				7C0ACA4E2453CF1E0022E987 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 7C84A0792453CAF10016AE58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		509D7CBDCC1F074EC5CC29FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TweetClock/Pods-TweetClock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TweetClock/Pods-TweetClock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TweetClock/Pods-TweetClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879237C8B3BCFBD675FD4AF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TweetClock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C84A0742453CAF10016AE58 /* Sources */ = {
@@ -282,6 +358,7 @@
 		};
 		7C84A08D2453CAF30016AE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6CE7D5882E9FF2EB9EC2C7 /* Pods-TweetClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +377,7 @@
 		};
 		7C84A08E2453CAF30016AE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0AA5134FEB183EB5E6B40F3 /* Pods-TweetClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C0ACA4E2453CF1E0022E987 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C0ACA4F2453CF1E0022E987 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C0ACA4E2453CF1E0022E987 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C84A0702453CAF10016AE58 /* Project object */;
 }

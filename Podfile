@@ -6,5 +6,10 @@ target 'TweetClock' do
   use_frameworks!
 
   # Pods for TweetClock
+  pod 'RealmSwift'
+  pod 'RxRealm'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'UITextView+Placeholder'
 
 end
