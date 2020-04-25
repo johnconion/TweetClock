@@ -22,6 +22,9 @@ class MainClockViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private let clock = Clock()
     private let battery = Battery()
+    
+    private let backgroundColorStore = BackgroundColorStore.shared
+    private let textColorStore = TextColorStore.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +38,18 @@ class MainClockViewController: UIViewController {
             self!.reloadView()
         })
         .disposed(by: disposeBag)
-    }
-    
-    // ステータスバーを非表示にするためオーバーライドする
-    override var prefersStatusBarHidden: Bool {
-      return true
+        
+        backgroundColorStore.update().subscribe(){ event in
+            let value = event.element!
+            self.view.backgroundColor = UIColor(displayP3Red: value.getRedValue(), green: value.getGreenValue(), blue: value.getBlueValue(), alpha: 1.0)
+        }.disposed(by: disposeBag)
+        
+        textColorStore.update().subscribe(){ event in
+            let value = event.element!
+            let color = UIColor(displayP3Red: value.getRedValue(), green: value.getGreenValue(), blue: value.getBlueValue(), alpha: 1.0)
+            self.dateLabel.textColor = color
+            self.timeLabel.textColor = color
+        }.disposed(by: disposeBag)
     }
 
     /*
@@ -67,8 +77,6 @@ class MainClockViewController: UIViewController {
 private extension MainClockViewController{
     
     private func setLayout(){
-        // ステータスバーを非表示にする
-        self.setNeedsStatusBarAppearanceUpdate()
         // ボタンに画像を設定
         settingsButton.setButtonColor(image: UIImage(named: "settings.png")!, color: .label)
     }

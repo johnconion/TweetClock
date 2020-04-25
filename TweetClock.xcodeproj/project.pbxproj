@@ -12,9 +12,20 @@
 		7C0ACA542453E8770022E987 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA532453E8760022E987 /* Clock.swift */; };
 		7C0ACA572453F4100022E987 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA562453F4100022E987 /* Battery.swift */; };
 		7C0ACA59245450FF0022E987 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0ACA58245450FF0022E987 /* Settings.storyboard */; };
-		7C0ACA5B2454522E0022E987 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */; };
 		7C0ACA5E245452770022E987 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5D245452770022E987 /* Router.swift */; };
 		7C0ACA6024545E350022E987 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5F24545E350022E987 /* Extentions.swift */; };
+		7C0ACA62245462750022E987 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA61245462750022E987 /* SettingsTableViewController.swift */; };
+		7C0ACA64245463570022E987 /* ColorSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA63245463570022E987 /* ColorSettingViewController.swift */; };
+		7C0ACA662454636B0022E987 /* ColorSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0ACA652454636B0022E987 /* ColorSetting.storyboard */; };
+		7C0ACA6824546E3F0022E987 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA6724546E3F0022E987 /* Color.swift */; };
+		7C0ACA6A245475720022E987 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA69245475720022E987 /* UserDefaultManager.swift */; };
+		7C0ACA6C2454759D0022E987 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA6B2454759D0022E987 /* UserDefaultKey.swift */; };
+		7C0ACA70245478C40022E987 /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA6F245478C40022E987 /* ObjectStore.swift */; };
+		7C0ACA72245478F00022E987 /* BackgroundColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA71245478F00022E987 /* BackgroundColorStore.swift */; };
+		7C0ACA74245479080022E987 /* TextColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA73245479080022E987 /* TextColorStore.swift */; };
+		7C0ACA76245487030022E987 /* FirstRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA75245487030022E987 /* FirstRun.swift */; };
+		7C0ACA782454890C0022E987 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0ACA772454890C0022E987 /* Splash.storyboard */; };
+		7C0ACA7A245489290022E987 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA79245489290022E987 /* SplashViewController.swift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
 		7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */; };
@@ -30,9 +41,20 @@
 		7C0ACA532453E8760022E987 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		7C0ACA562453F4100022E987 /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		7C0ACA58245450FF0022E987 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7C0ACA5D245452770022E987 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7C0ACA5F24545E350022E987 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		7C0ACA61245462750022E987 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		7C0ACA63245463570022E987 /* ColorSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingViewController.swift; sourceTree = "<group>"; };
+		7C0ACA652454636B0022E987 /* ColorSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSetting.storyboard; sourceTree = "<group>"; };
+		7C0ACA6724546E3F0022E987 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7C0ACA69245475720022E987 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		7C0ACA6B2454759D0022E987 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
+		7C0ACA6F245478C40022E987 /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
+		7C0ACA71245478F00022E987 /* BackgroundColorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorStore.swift; sourceTree = "<group>"; };
+		7C0ACA73245479080022E987 /* TextColorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColorStore.swift; sourceTree = "<group>"; };
+		7C0ACA75245487030022E987 /* FirstRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRun.swift; sourceTree = "<group>"; };
+		7C0ACA772454890C0022E987 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		7C0ACA79245489290022E987 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +102,7 @@
 			children = (
 				7C0ACA532453E8760022E987 /* Clock.swift */,
 				7C0ACA562453F4100022E987 /* Battery.swift */,
+				7C0ACA6724546E3F0022E987 /* Color.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -87,10 +110,31 @@
 		7C0ACA5C245452590022E987 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7C0ACA6E245478B40022E987 /* Protocol */,
 				7C0ACA5F24545E350022E987 /* Extentions.swift */,
 				7C0ACA5D245452770022E987 /* Router.swift */,
+				7C0ACA69245475720022E987 /* UserDefaultManager.swift */,
+				7C0ACA6B2454759D0022E987 /* UserDefaultKey.swift */,
+				7C0ACA75245487030022E987 /* FirstRun.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		7C0ACA6D2454788D0022E987 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7C0ACA71245478F00022E987 /* BackgroundColorStore.swift */,
+				7C0ACA73245479080022E987 /* TextColorStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7C0ACA6E245478B40022E987 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7C0ACA6F245478C40022E987 /* ObjectStore.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		7C84A06F2453CAF10016AE58 = {
@@ -118,11 +162,16 @@
 				7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */,
 				7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */,
 				7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */,
-				7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */,
+				7C0ACA61245462750022E987 /* SettingsTableViewController.swift */,
+				7C0ACA63245463570022E987 /* ColorSettingViewController.swift */,
+				7C0ACA79245489290022E987 /* SplashViewController.swift */,
+				7C0ACA6D2454788D0022E987 /* Store */,
 				7C0ACA552453F3F50022E987 /* Domain */,
 				7C0ACA5C245452590022E987 /* Other */,
 				7C84A0812453CAF10016AE58 /* Main.storyboard */,
 				7C0ACA58245450FF0022E987 /* Settings.storyboard */,
+				7C0ACA652454636B0022E987 /* ColorSetting.storyboard */,
+				7C0ACA772454890C0022E987 /* Splash.storyboard */,
 				7C84A0842453CAF30016AE58 /* Assets.xcassets */,
 				7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */,
 				7C84A0892453CAF30016AE58 /* Info.plist */,
@@ -197,9 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */,
+				7C0ACA662454636B0022E987 /* ColorSetting.storyboard in Resources */,
 				7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */,
 				7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */,
 				7C0ACA59245450FF0022E987 /* Settings.storyboard in Resources */,
+				7C0ACA782454890C0022E987 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,15 +303,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0ACA74245479080022E987 /* TextColorStore.swift in Sources */,
 				7C0ACA5E245452770022E987 /* Router.swift in Sources */,
 				7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */,
+				7C0ACA7A245489290022E987 /* SplashViewController.swift in Sources */,
+				7C0ACA6824546E3F0022E987 /* Color.swift in Sources */,
+				7C0ACA64245463570022E987 /* ColorSettingViewController.swift in Sources */,
 				7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */,
-				7C0ACA5B2454522E0022E987 /* SettingsViewController.swift in Sources */,
 				7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */,
+				7C0ACA6A245475720022E987 /* UserDefaultManager.swift in Sources */,
 				7C0ACA572453F4100022E987 /* Battery.swift in Sources */,
+				7C0ACA70245478C40022E987 /* ObjectStore.swift in Sources */,
 				7C0ACA522453D2860022E987 /* SyncSignalDispatcher.swift in Sources */,
 				7C0ACA542453E8770022E987 /* Clock.swift in Sources */,
+				7C0ACA6C2454759D0022E987 /* UserDefaultKey.swift in Sources */,
+				7C0ACA72245478F00022E987 /* BackgroundColorStore.swift in Sources */,
+				7C0ACA76245487030022E987 /* FirstRun.swift in Sources */,
 				7C0ACA6024545E350022E987 /* Extentions.swift in Sources */,
+				7C0ACA62245462750022E987 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +472,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.temp.TweetClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,10 +492,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.temp.TweetClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
