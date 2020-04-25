@@ -10,7 +10,7 @@
 		7C0ACA502453CF1E0022E987 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0ACA4F2453CF1E0022E987 /* IQKeyboardManagerSwift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
-		7C84A0802453CAF10016AE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* ViewController.swift */; };
+		7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */; };
 		7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0812453CAF10016AE58 /* Main.storyboard */; };
 		7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0842453CAF30016AE58 /* Assets.xcassets */; };
 		7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C84A07F2453CAF10016AE58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClockViewController.swift; sourceTree = "<group>"; };
 		7C84A0822453CAF10016AE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C84A0842453CAF30016AE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C84A0872453CAF30016AE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			children = (
 				7C84A07B2453CAF10016AE58 /* AppDelegate.swift */,
 				7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */,
-				7C84A07F2453CAF10016AE58 /* ViewController.swift */,
+				7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */,
 				7C84A0812453CAF10016AE58 /* Main.storyboard */,
 				7C84A0842453CAF30016AE58 /* Assets.xcassets */,
 				7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */,
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C84A0802453CAF10016AE58 /* ViewController.swift in Sources */,
+				7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */,
 				7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */,
 				7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */,
 			);

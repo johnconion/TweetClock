@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SwiftDate
 
-class ViewController: UIViewController {
+class MainClockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 

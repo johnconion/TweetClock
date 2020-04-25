@@ -11,5 +11,6 @@ target 'TweetClock' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'UITextView+Placeholder'
+  pod 'SwiftDate'
 
 end
