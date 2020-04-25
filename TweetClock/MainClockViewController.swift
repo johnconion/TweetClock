@@ -46,16 +46,12 @@ class MainClockViewController: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // タッチイベントを取得.
         let aTouch: UITouch = touches.first!
-
         // 移動した先の座標を取得.
         let location = aTouch.location(in: self.view)
-
         // 移動する前の座標を取得.
         let prevLocation = aTouch.previousLocation(in: self.view)
-
         // ドラッグで移動したy距離をとる.
         let deltaY: CGFloat = (location.y - prevLocation.y) * -1
-
         // ドラックで画面の明るさを制御する
         UIScreen.main.brightness += deltaY / (self.view.frame.height / 3)
     }
