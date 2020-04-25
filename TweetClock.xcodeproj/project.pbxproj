@@ -11,6 +11,10 @@
 		7C0ACA522453D2860022E987 /* SyncSignalDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */; };
 		7C0ACA542453E8770022E987 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA532453E8760022E987 /* Clock.swift */; };
 		7C0ACA572453F4100022E987 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA562453F4100022E987 /* Battery.swift */; };
+		7C0ACA59245450FF0022E987 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0ACA58245450FF0022E987 /* Settings.storyboard */; };
+		7C0ACA5B2454522E0022E987 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */; };
+		7C0ACA5E245452770022E987 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5D245452770022E987 /* Router.swift */; };
+		7C0ACA6024545E350022E987 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA5F24545E350022E987 /* Extentions.swift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
 		7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */; };
@@ -25,6 +29,10 @@
 		7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncSignalDispatcher.swift; sourceTree = "<group>"; };
 		7C0ACA532453E8760022E987 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		7C0ACA562453F4100022E987 /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		7C0ACA58245450FF0022E987 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7C0ACA5D245452770022E987 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7C0ACA5F24545E350022E987 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,15 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		7C0ACA5C245452590022E987 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7C0ACA5F24545E350022E987 /* Extentions.swift */,
+				7C0ACA5D245452770022E987 /* Router.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		7C84A06F2453CAF10016AE58 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +118,11 @@
 				7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */,
 				7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */,
 				7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */,
+				7C0ACA5A2454522E0022E987 /* SettingsViewController.swift */,
 				7C0ACA552453F3F50022E987 /* Domain */,
+				7C0ACA5C245452590022E987 /* Other */,
 				7C84A0812453CAF10016AE58 /* Main.storyboard */,
+				7C0ACA58245450FF0022E987 /* Settings.storyboard */,
 				7C84A0842453CAF30016AE58 /* Assets.xcassets */,
 				7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */,
 				7C84A0892453CAF30016AE58 /* Info.plist */,
@@ -179,6 +199,7 @@
 				7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */,
 				7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */,
 				7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */,
+				7C0ACA59245450FF0022E987 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,12 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0ACA5E245452770022E987 /* Router.swift in Sources */,
 				7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */,
 				7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */,
+				7C0ACA5B2454522E0022E987 /* SettingsViewController.swift in Sources */,
 				7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */,
 				7C0ACA572453F4100022E987 /* Battery.swift in Sources */,
 				7C0ACA522453D2860022E987 /* SyncSignalDispatcher.swift in Sources */,
 				7C0ACA542453E8770022E987 /* Clock.swift in Sources */,
+				7C0ACA6024545E350022E987 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

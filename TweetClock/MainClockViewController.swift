@@ -16,6 +16,7 @@ class MainClockViewController: UIViewController {
     @IBOutlet weak var batteryLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var settingsButton: UIButton!
     
     private let syncSignalDispatcher = SyncSignalDispatcher.shared
     private let disposeBag = DisposeBag()
@@ -24,6 +25,8 @@ class MainClockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setLayout()
         
         syncSignalDispatcher
         .clockTimer
@@ -55,6 +58,10 @@ class MainClockViewController: UIViewController {
         // ドラックで画面の明るさを制御する
         UIScreen.main.brightness += deltaY / (self.view.frame.height / 3)
     }
+    
+    @IBAction func tapSettingButton(_ sender: Any) {
+        self.present(Router.presentSettingsView(), animated: true, completion: nil)
+    }
 }
 
 private extension MainClockViewController{
@@ -62,6 +69,8 @@ private extension MainClockViewController{
     private func setLayout(){
         // ステータスバーを非表示にする
         self.setNeedsStatusBarAppearanceUpdate()
+        // ボタンに画像を設定
+        settingsButton.setButtonColor(image: UIImage(named: "settings.png")!, color: .label)
     }
     
     private func reloadView(){

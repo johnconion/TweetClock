@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04/25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-FD-ku7">
-                                <rect key="frame" x="10" y="119" width="394" height="29"/>
+                                <rect key="frame" x="15" y="119" width="389" height="29"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,24 +36,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD6-un-qXP">
+                                <rect key="frame" x="15" y="54" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oT2-hx-9Ta"/>
+                                    <constraint firstAttribute="width" constant="30" id="tkd-8A-RTH"/>
+                                </constraints>
+                                <state key="normal" image="settings"/>
+                                <connections>
+                                    <action selector="tapSettingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJo-0W-yef"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5KR-1f-GRg"/>
-                            <constraint firstItem="iRc-FD-ku7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Eu0-66-6QB"/>
+                            <constraint firstItem="iRc-FD-ku7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Eu0-66-6QB"/>
                             <constraint firstItem="iRc-FD-ku7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="ISV-Sx-yDI"/>
                             <constraint firstItem="x00-AA-hDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="12" id="JN2-cG-RbP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRc-FD-ku7" secondAttribute="trailing" constant="10" id="Kte-qE-PKC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x00-AA-hDw" secondAttribute="trailing" constant="20" id="TWh-7v-z1b"/>
+                            <constraint firstItem="gD6-un-qXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WUg-MY-JgU"/>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="top" secondItem="iRc-FD-ku7" secondAttribute="bottom" constant="5" id="u7k-g5-UZP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jam-nI-FPu" secondAttribute="trailing" constant="20" id="xd7-KG-07y"/>
+                            <constraint firstItem="gD6-un-qXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zq1-NS-rc8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="batteryLabel" destination="x00-AA-hDw" id="aA7-dK-ra4"/>
                         <outlet property="dateLabel" destination="iRc-FD-ku7" id="vtO-gL-h0S"/>
+                        <outlet property="settingsButton" destination="gD6-un-qXP" id="8PT-ih-B5A"/>
                         <outlet property="timeLabel" destination="Jam-nI-FPu" id="eRF-88-0t0"/>
                     </connections>
                 </viewController>
@@ -62,4 +76,7 @@
             <point key="canvasLocation" x="-7.2463768115942031" y="90.401785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="25" height="25"/>
+    </resources>
 </document>
