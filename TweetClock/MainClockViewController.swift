@@ -10,6 +10,7 @@ import UIKit
 import SwiftDate
 import RxCocoa
 import RxSwift
+import Swifter
 
 class MainClockViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class MainClockViewController: UIViewController {
     
     private let backgroundColorStore = BackgroundColorStore.shared
     private let textColorStore = TextColorStore.shared
+    private let tweetItemsStore = TweetItemsStore.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +34,19 @@ class MainClockViewController: UIViewController {
         setLayout()
         
         syncSignalDispatcher
-        .clockTimer
-        .subscribe(onNext: { [weak self] _ in
-            guard self != nil else { return }
-            self!.reloadView()
-        })
-        .disposed(by: disposeBag)
+            .clockTimer
+            .subscribe(onNext: { [weak self] _ in
+                guard self != nil else { return }
+                self!.reloadView()
+            })
+            .disposed(by: disposeBag)
+        
+        syncSignalDispatcher
+            .tweetTimer
+            .subscribe(onNext: { [weak self] _ in
+                guard self != nil else { return }
+                SwifterWrapper.share.getTimeline()
+            }).disposed(by: disposeBag)
         
         backgroundColorStore.update().subscribe(){ event in
             let value = event.element!
@@ -50,8 +59,15 @@ class MainClockViewController: UIViewController {
             self.dateLabel.textColor = color
             self.timeLabel.textColor = color
         }.disposed(by: disposeBag)
+        
+        tweetItemsStore.updates().subscribe(){ event in
+            print(event.element)
+        }.disposed(by: disposeBag)
     }
-
+    @IBAction func test(_ sender: Any) {
+        SwifterWrapper.share.getTimeline()
+    }
+    
     /*
      ドラッグを感知した際に呼ばれるメソッド.
      (ドラッグ中何度も呼ばれる)

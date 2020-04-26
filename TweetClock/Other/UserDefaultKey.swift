@@ -16,4 +16,8 @@ public enum UserDefaultKey:String{
     case BackgroundGreenColor = "background_green_color"
     case BackgroundBlueColor = "background_blue_color"
     case FirstRun = "first_run"
+    case TwitterKey = "twitter_key"
+    case TwitterSecret = "twitter_secret"
+    case TwitterScreenName = "twitter_screen_name"
+    case TwitterUserID = "twitter_user_id"
 }

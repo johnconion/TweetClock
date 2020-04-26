@@ -63,5 +63,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>swifter-eUKL99KPRxcg2zdeiU9BjSN7s</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

@@ -9,6 +9,15 @@
           "revision": "b0f0a127cca6bb39378447baa2afff74123abd09",
           "version": "6.5.5"
         }
+      },
+      {
+        "package": "Swifter",
+        "repositoryURL": "https://github.com/mattdonnelly/Swifter.git",
+        "state": {
+          "branch": null,
+          "revision": "39541c9fb3312771fd851bde2d6a89886fbe3851",
+          "version": "2.3.0"
+        }
       }
     ]
   },

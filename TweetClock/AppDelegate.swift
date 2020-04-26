@@ -8,17 +8,19 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Swifter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let TWITTER_CONSUMER_KEY = "eUKL99KPRxcg2zdeiU9BjSN7s"
+    private let TWITTER_CONSUMER_SECRET = "PqxWwKTaOpsMLVA1g3iZ8G92RWsohgieOW49SywSS4Qwpb3Yw3"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
+        SwifterWrapper.share.setup(consumerKey: TWITTER_CONSUMER_KEY, consumerSecret: TWITTER_CONSUMER_SECRET)
         return true
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

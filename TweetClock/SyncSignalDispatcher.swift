@@ -22,7 +22,7 @@ class SyncSignalDispatcher {
     }
     
     var tweetTimer: Observable<Int> {
-        Observable<Int>.interval(5.0, scheduler: MainScheduler.instance)
+        Observable<Int>.interval(60.0, scheduler: MainScheduler.instance)
         .startWith(0)
         .share(replay: 1)
     }

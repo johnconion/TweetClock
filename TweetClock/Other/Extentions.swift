@@ -583,3 +583,8 @@ extension UIImage {
         }
     }
 }
+
+extension Optional{
+    func notNil() -> Bool{ self != nil }
+}
+
