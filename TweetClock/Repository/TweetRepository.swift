@@ -13,6 +13,9 @@ class TweetRepository {
     static func save(dic:[[String: Any?]]){
         let realm = try! Realm()
         
+        // 全消去して書き込むようにしちゃえ
+        realm.delete(realm.objects(RealmTweet.self))
+        
         var tweets : [RealmTweet] = []
         
         for tweetDic in dic{
