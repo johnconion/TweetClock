@@ -1,4 +1,7 @@
 PODS:
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
@@ -17,6 +20,7 @@ PODS:
   - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
+  - Kingfisher (~> 5.0)
   - RealmSwift
   - RxCocoa
   - RxRealm
@@ -26,6 +30,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - Realm
     - RealmSwift
     - RxCocoa
@@ -36,6 +41,7 @@ SPEC REPOS:
     - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -45,6 +51,6 @@ SPEC CHECKSUMS:
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: dd9583a43ea95d7c037e6b86464b5a1bb69e7864
+PODFILE CHECKSUM: 578a551b3fe01c8083001cbb40e5c438a8b221ff
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

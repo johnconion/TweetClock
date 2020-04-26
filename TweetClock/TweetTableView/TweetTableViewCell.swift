@@ -12,7 +12,14 @@ import RxCocoa
 
 class TweetTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var userIcon: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetLabel: UILabel!
+    @IBOutlet weak var rtAndFavLabel: UILabel!
+    @IBOutlet weak var img1: UIImageView!
+    @IBOutlet weak var img2: UIImageView!
+    @IBOutlet weak var img3: UIImageView!
+    @IBOutlet weak var img4: UIImageView!
     
     var disposeBag = DisposeBag()
     

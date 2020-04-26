@@ -13,8 +13,10 @@ class TweetRepository {
     static func save(dic:[[String: Any?]]){
         let realm = try! Realm()
         
-        // 全消去して書き込むようにしちゃえ
-        realm.delete(realm.objects(RealmTweet.self))
+        try! realm.write{
+            // 全消去して書き込むようにしちゃえ
+            realm.delete(realm.objects(RealmTweet.self))
+        }
         
         var tweets : [RealmTweet] = []
         
@@ -28,7 +30,7 @@ class TweetRepository {
             
             let user = RealmTwitterUser()
             let userDic = tweetDic["user"] as! [String:Any]
-            user.iconUrl = userDic["profile_image_url"] as! String
+            user.iconUrl = userDic["profile_image_url_https"] as! String
             user.userName = userDic["name"] as! String
             tweet.user = user
 
@@ -36,7 +38,7 @@ class TweetRepository {
                 let imagesArray = (tweetDic["extended_entities"] as! [String:Any])["media"] as! [[String:Any]]
                 for imageData in imagesArray{
                     let image = RealmTwitterImage()
-                    image.imageUrl = imageData["media_url"] as! String
+                    image.imageUrl = imageData["media_url_https"] as! String
                     tweet.images.append(image)
                 }
             }
