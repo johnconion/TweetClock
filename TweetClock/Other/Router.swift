@@ -28,4 +28,14 @@ class Router {
         vc.modalPresentationStyle = .overFullScreen
         return vc
     }
+    
+    static func openTweet(vc:UIViewController,id:String){
+        let urlStr = "twitter://status?id=\(id)"
+        let url = URL(string: (urlStr).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        } else {
+            print("インストールされていなかったらSafariで開く")
+        }
+    }
 }

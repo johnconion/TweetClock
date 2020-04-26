@@ -38,4 +38,8 @@ class Color{
         blueColor = b
         return self
     }
+    
+    func getUIColor() -> UIColor{
+        return UIColor(red: CGFloat(redColor), green: CGFloat(greenColor), blue: CGFloat(blueColor), alpha: 1.0)
+    }
 }

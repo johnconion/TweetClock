@@ -18,6 +18,17 @@ class MainClockViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var tweetTableView: UITableView!{
+        didSet{
+            tweetTableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "tweet_cell")
+            tweetTableViewDelegate.parentVC = self
+            tweetTableView.delegate = tweetTableViewDelegate
+            tweetTableView.dataSource = tweetTableViewDataSourc
+        }
+    }
+    
+    private var tweetTableViewDelegate = TweetTableViewDelegate()
+    private let tweetTableViewDataSourc = TweetTableViewDataSource()
     
     private let syncSignalDispatcher = SyncSignalDispatcher.shared
     private let disposeBag = DisposeBag()
@@ -54,18 +65,15 @@ class MainClockViewController: UIViewController {
         }.disposed(by: disposeBag)
         
         textColorStore.update().subscribe(){ event in
-            let value = event.element!
-            let color = UIColor(displayP3Red: value.getRedValue(), green: value.getGreenValue(), blue: value.getBlueValue(), alpha: 1.0)
+            let color = event.element!.getUIColor()
             self.dateLabel.textColor = color
             self.timeLabel.textColor = color
+            self.tweetTableView.separatorColor = color
         }.disposed(by: disposeBag)
         
         tweetItemsStore.updates().subscribe(){ event in
-            print(event.element)
+            self.tweetTableView.reloadData()
         }.disposed(by: disposeBag)
-    }
-    @IBAction func test(_ sender: Any) {
-        SwifterWrapper.share.getTimeline()
     }
     
     /*

@@ -47,23 +47,24 @@
                                     <action selector="tapSettingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJo-0W-yef"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="633-pP-4dQ">
-                                <rect key="frame" x="184" y="450" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWL-Wg-RhU"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyi-f0-NbJ">
+                                <rect key="frame" x="10" y="301.5" width="394" height="560.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyi-f0-NbJ" secondAttribute="trailing" constant="10" id="2V2-OE-76D"/>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5KR-1f-GRg"/>
                             <constraint firstItem="iRc-FD-ku7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Eu0-66-6QB"/>
                             <constraint firstItem="iRc-FD-ku7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="ISV-Sx-yDI"/>
                             <constraint firstItem="x00-AA-hDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="12" id="JN2-cG-RbP"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Kc5-y8-sqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRc-FD-ku7" secondAttribute="trailing" constant="10" id="Kte-qE-PKC"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LaA-Hk-1dY"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="Jam-nI-FPu" secondAttribute="bottom" constant="25" id="LwL-Of-PGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x00-AA-hDw" secondAttribute="trailing" constant="20" id="TWh-7v-z1b"/>
                             <constraint firstItem="gD6-un-qXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WUg-MY-JgU"/>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="top" secondItem="iRc-FD-ku7" secondAttribute="bottom" constant="5" id="u7k-g5-UZP"/>
@@ -77,6 +78,7 @@
                         <outlet property="dateLabel" destination="iRc-FD-ku7" id="vtO-gL-h0S"/>
                         <outlet property="settingsButton" destination="gD6-un-qXP" id="8PT-ih-B5A"/>
                         <outlet property="timeLabel" destination="Jam-nI-FPu" id="eRF-88-0t0"/>
+                        <outlet property="tweetTableView" destination="Gyi-f0-NbJ" id="VBH-h8-q6T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -28,9 +28,9 @@ class TweetItemsStore {
             .map{_ in self.tweets}
     }
     
-    func getRecords() -> [Tweet] { tweets }
+    func getRecords() -> [Tweet] { tweets.reversed() }
     
-    func get(index: Int) -> Tweet { tweets[index] }
+    func get(index: Int) -> Tweet { tweets.reversed()[index] }
     
     func size() -> Int { tweets.count }
     

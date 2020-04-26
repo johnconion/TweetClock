@@ -86,7 +86,7 @@ import Swifter
         let Sw_Token = Credential.OAuthAccessToken(key: oAuthToken, secret: secret)
         let Sw_credential = Credential(accessToken: Sw_Token)
         twitter?.client.credential = Sw_credential
-        twitter?.getHomeTimeline(count: 1, success: { json in
+        twitter?.getHomeTimeline(count: 100, success: { json in
 //            print(json)
             let json = json.description
             let data = json.data(using: .utf8)!

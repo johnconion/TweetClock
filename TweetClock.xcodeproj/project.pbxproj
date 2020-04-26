@@ -43,8 +43,13 @@
 		7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0812453CAF10016AE58 /* Main.storyboard */; };
 		7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0842453CAF30016AE58 /* Assets.xcassets */; };
 		7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84A0862453CAF30016AE58 /* LaunchScreen.storyboard */; };
+		7CA8B3AE2455BE1B003A3E17 /* TweetCellBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8B3AD2455BE1B003A3E17 /* TweetCellBinder.swift */; };
 		7CF99D812455A43300C1CC90 /* TweetItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF99D802455A43300C1CC90 /* TweetItemsStore.swift */; };
 		7CF99D832455A56200C1CC90 /* RealmManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF99D822455A56200C1CC90 /* RealmManeger.swift */; };
+		7CF99D862455AE7300C1CC90 /* TweetTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF99D852455AE7300C1CC90 /* TweetTableViewDataSource.swift */; };
+		7CF99D882455AF4B00C1CC90 /* TweetTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF99D872455AF4B00C1CC90 /* TweetTableViewDelegate.swift */; };
+		7CF99D8D2455B12D00C1CC90 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF99D8B2455B12D00C1CC90 /* TweetTableViewCell.swift */; };
+		7CF99D8E2455B12D00C1CC90 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF99D8C2455B12D00C1CC90 /* TweetTableViewCell.xib */; };
 		9F078B33232876B81D3460AB /* Pods_TweetClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6C15D58F30E861BE651EF9 /* Pods_TweetClock.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +91,13 @@
 		7C84A0842453CAF30016AE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C84A0872453CAF30016AE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C84A0892453CAF30016AE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA8B3AD2455BE1B003A3E17 /* TweetCellBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellBinder.swift; sourceTree = "<group>"; };
 		7CF99D802455A43300C1CC90 /* TweetItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetItemsStore.swift; sourceTree = "<group>"; };
 		7CF99D822455A56200C1CC90 /* RealmManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManeger.swift; sourceTree = "<group>"; };
+		7CF99D852455AE7300C1CC90 /* TweetTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewDataSource.swift; sourceTree = "<group>"; };
+		7CF99D872455AF4B00C1CC90 /* TweetTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewDelegate.swift; sourceTree = "<group>"; };
+		7CF99D8B2455B12D00C1CC90 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		7CF99D8C2455B12D00C1CC90 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		BB6C15D58F30E861BE651EF9 /* Pods_TweetClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA5134FEB183EB5E6B40F3 /* Pods-TweetClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetClock.release.xcconfig"; path = "Target Support Files/Pods-TweetClock/Pods-TweetClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +227,7 @@
 				7C0ACA61245462750022E987 /* SettingsTableViewController.swift */,
 				7C0ACA63245463570022E987 /* ColorSettingViewController.swift */,
 				7C0ACA79245489290022E987 /* SplashViewController.swift */,
+				7CF99D842455AE4700C1CC90 /* TweetTableView */,
 				7C0ACA6D2454788D0022E987 /* Store */,
 				7C0ACA9424559A7D0022E987 /* Repository */,
 				7C0ACA552453F3F50022E987 /* Domain */,
@@ -231,6 +242,26 @@
 				7C84A0892453CAF30016AE58 /* Info.plist */,
 			);
 			path = TweetClock;
+			sourceTree = "<group>";
+		};
+		7CA8B3AC2455BE07003A3E17 /* binder */ = {
+			isa = PBXGroup;
+			children = (
+				7CA8B3AD2455BE1B003A3E17 /* TweetCellBinder.swift */,
+			);
+			path = binder;
+			sourceTree = "<group>";
+		};
+		7CF99D842455AE4700C1CC90 /* TweetTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7CA8B3AC2455BE07003A3E17 /* binder */,
+				7CF99D852455AE7300C1CC90 /* TweetTableViewDataSource.swift */,
+				7CF99D872455AF4B00C1CC90 /* TweetTableViewDelegate.swift */,
+				7CF99D8B2455B12D00C1CC90 /* TweetTableViewCell.swift */,
+				7CF99D8C2455B12D00C1CC90 /* TweetTableViewCell.xib */,
+			);
+			path = TweetTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +334,7 @@
 			files = (
 				7C84A0882453CAF30016AE58 /* LaunchScreen.storyboard in Resources */,
 				7C0ACA662454636B0022E987 /* ColorSetting.storyboard in Resources */,
+				7CF99D8E2455B12D00C1CC90 /* TweetTableViewCell.xib in Resources */,
 				7C84A0852453CAF30016AE58 /* Assets.xcassets in Resources */,
 				7C84A0832453CAF10016AE58 /* Main.storyboard in Resources */,
 				7C0ACA59245450FF0022E987 /* Settings.storyboard in Resources */,
@@ -370,12 +402,14 @@
 				7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */,
 				7CF99D832455A56200C1CC90 /* RealmManeger.swift in Sources */,
 				7C0ACA6A245475720022E987 /* UserDefaultManager.swift in Sources */,
+				7CA8B3AE2455BE1B003A3E17 /* TweetCellBinder.swift in Sources */,
 				7C0ACA8F2455951B0022E987 /* RealmTweet.swift in Sources */,
 				7C0ACA572453F4100022E987 /* Battery.swift in Sources */,
 				7C0ACA7F2455257F0022E987 /* SwifterWrapper.swift in Sources */,
 				7C0ACA70245478C40022E987 /* ObjectStore.swift in Sources */,
 				7C0ACA9624559A9C0022E987 /* TweetRepository.swift in Sources */,
 				7C0ACA522453D2860022E987 /* SyncSignalDispatcher.swift in Sources */,
+				7CF99D8D2455B12D00C1CC90 /* TweetTableViewCell.swift in Sources */,
 				7C0ACA542453E8770022E987 /* Clock.swift in Sources */,
 				7C0ACA83245536E20022E987 /* TwitterAccount.swift in Sources */,
 				7C0ACA6C2454759D0022E987 /* UserDefaultKey.swift in Sources */,
@@ -388,6 +422,8 @@
 				7C0ACA6024545E350022E987 /* Extentions.swift in Sources */,
 				7C0ACA62245462750022E987 /* SettingsTableViewController.swift in Sources */,
 				7C0ACA81245536BF0022E987 /* TwitterAccountStore.swift in Sources */,
+				7CF99D862455AE7300C1CC90 /* TweetTableViewDataSource.swift in Sources */,
+				7CF99D882455AF4B00C1CC90 /* TweetTableViewDelegate.swift in Sources */,
 				7C0ACA8824558CD30022E987 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

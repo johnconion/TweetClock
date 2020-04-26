@@ -25,6 +25,7 @@ class SettingsTableViewController: UITableViewController {
         
         twitterAccountStore.update().subscribe(){ _ in
             self.checkTwitterAcccount()
+            self.twitter.getTimeline()
         }.disposed(by: disposeBag)
     }
 

@@ -29,11 +29,13 @@ class TweetRepository {
             user.userName = userDic["name"] as! String
             tweet.user = user
 
-            let imagesArray = (tweetDic["extended_entities"] as! [String:Any])["media"] as! [[String:Any]]
-            for imageData in imagesArray{
-                let image = RealmTwitterImage()
-                image.imageUrl = imageData["media_url"] as! String
-                tweet.images.append(image)
+            if tweetDic["extended_entities"] != nil{
+                let imagesArray = (tweetDic["extended_entities"] as! [String:Any])["media"] as! [[String:Any]]
+                for imageData in imagesArray{
+                    let image = RealmTwitterImage()
+                    image.imageUrl = imageData["media_url"] as! String
+                    tweet.images.append(image)
+                }
             }
             
             tweets.append(tweet)
