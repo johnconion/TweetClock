@@ -23,6 +23,11 @@ class TweetCellBinder {
         cell.rtAndFavLabel.text = "\(String(item.retweetCount))RT \(String(item.favoriteCount))Fav"
         cell.backgroundColor = .clear
         
+        cell.img1.image = nil
+        cell.img2.image = nil
+        cell.img3.image = nil
+        cell.img4.image = nil
+        
         for (index, value) in item.images.enumerated() {
             switch index {
             case 0:

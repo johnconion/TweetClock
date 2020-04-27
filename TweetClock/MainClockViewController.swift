@@ -73,7 +73,13 @@ class MainClockViewController: UIViewController {
         
         tweetItemsStore.updates().subscribe(){ event in
             self.tweetTableView.reloadData()
+            self.tweetTableView.isHidden = false
         }.disposed(by: disposeBag)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        // 初回起動時は非表示にする
+        if tweetItemsStore.size() == 0 { tweetTableView.isHidden = true }
     }
     
     /*
