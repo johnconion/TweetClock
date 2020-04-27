@@ -38,6 +38,7 @@ class MainClockViewController: UIViewController {
     private let backgroundColorStore = BackgroundColorStore.shared
     private let textColorStore = TextColorStore.shared
     private let tweetItemsStore = TweetItemsStore.shared
+    private let loadTimeLineUseCase = LoadTimeLineUseCase()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ class MainClockViewController: UIViewController {
             .tweetTimer
             .subscribe(onNext: { [weak self] _ in
                 guard self != nil else { return }
-                SwifterWrapper.share.getTimeline()
+                self!.loadTimeLineUseCase.execute()
             }).disposed(by: disposeBag)
         
         backgroundColorStore.update().subscribe(){ event in
@@ -65,10 +66,11 @@ class MainClockViewController: UIViewController {
         }.disposed(by: disposeBag)
         
         textColorStore.update().subscribe(){ event in
+            let value = event.element!
             let color = event.element!.getUIColor()
             self.dateLabel.textColor = color
             self.timeLabel.textColor = color
-            self.tweetTableView.separatorColor = color
+            self.tweetTableView.separatorColor = UIColor(red: value.getRedValue(), green: value.getGreenValue(), blue: value.getBlueValue(), alpha: 0.5)
         }.disposed(by: disposeBag)
         
         tweetItemsStore.updates().subscribe(){ event in
@@ -109,6 +111,8 @@ private extension MainClockViewController{
     private func setLayout(){
         // ボタンに画像を設定
         settingsButton.setButtonColor(image: UIImage(named: "settings.png")!, color: .label)
+        tweetTableView.separatorInset = .zero
+        tweetTableView.layoutMargins = .zero
     }
     
     private func reloadView(){

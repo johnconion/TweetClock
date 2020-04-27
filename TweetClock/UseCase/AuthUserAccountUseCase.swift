@@ -12,17 +12,18 @@ class AuthUserAccountUseCase: NSObject {
     
     private let twitter = SwifterWrapper.share
     
-    func execute(viewController:UIViewController, success: @escaping () -> Void ){
-        TweetRepository.deleteAll()
+    func execute(viewController:UIViewController, success: @escaping () -> Void, error: @escaping () -> Void ){
         twitter.login(controller: viewController, success: { userID,screenName,key,secret in
             print("sucess")
+            TweetRepository.deleteAll()
             UserDefaultManager.setValue(key: .TwitterKey, value: key)
             UserDefaultManager.setValue(key: .TwitterSecret, value: secret)
             UserDefaultManager.setValue(key: .TwitterUserID, value: userID)
             UserDefaultManager.setValue(key: .TwitterScreenName, value: screenName)
             success()
-        }, failure: { error in
-            print(error!)
+        }, failure: { e in
+            print(e!)
+            error()
         })
     }
 }

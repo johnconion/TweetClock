@@ -87,7 +87,9 @@ import Swifter
         let Sw_credential = Credential(accessToken: Sw_Token)
         twitter?.client.credential = Sw_credential
         twitter?.getHomeTimeline(count: 50, success: { json in
-            print(json)
+//            print(json)
+            // 最後にAPIアクセスした時刻を更新
+            LoadTimeLineLastTime.update()
             let json = json.description
             let data = json.data(using: .utf8)!
             do {

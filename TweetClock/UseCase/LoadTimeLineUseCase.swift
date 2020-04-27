@@ -13,6 +13,8 @@ class LoadTimeLineUseCase {
     private let twitter = SwifterWrapper.share
     
     func execute() {
-        twitter.getTimeline()
+        if LoadTimeLineLastTime.inTerm().not() {
+            twitter.getTimeline()
+        }
     }
 }

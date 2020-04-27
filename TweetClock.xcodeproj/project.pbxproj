@@ -39,6 +39,7 @@
 		7C0ACA9624559A9C0022E987 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA9524559A9C0022E987 /* TweetRepository.swift */; };
 		7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */; };
 		7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */; };
+		7C5163FC2456FC3E00224CD3 /* LoadTimeLineLastTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
 		7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */; };
@@ -87,6 +88,7 @@
 		7C0ACA9524559A9C0022E987 /* TweetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
 		7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineUseCase.swift; sourceTree = "<group>"; };
 		7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserAccountUseCase.swift; sourceTree = "<group>"; };
+		7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineLastTime.swift; sourceTree = "<group>"; };
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7C0ACA6E245478B40022E987 /* Protocol */,
+				7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */,
 				7C0ACA5F24545E350022E987 /* Extentions.swift */,
 				7C0ACA5D245452770022E987 /* Router.swift */,
 				7C0ACA69245475720022E987 /* UserDefaultManager.swift */,
@@ -439,6 +442,7 @@
 				7C0ACA8C245590AD0022E987 /* TwitterImage.swift in Sources */,
 				7C0ACA91245598E70022E987 /* RealmTwitterUser.swift in Sources */,
 				7C0ACA8A245590A20022E987 /* TwitterUser.swift in Sources */,
+				7C5163FC2456FC3E00224CD3 /* LoadTimeLineLastTime.swift in Sources */,
 				7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */,
 				7C0ACA93245599070022E987 /* RealmTwitterImage.swift in Sources */,
 				7C0ACA72245478F00022E987 /* BackgroundColorStore.swift in Sources */,

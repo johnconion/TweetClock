@@ -44,9 +44,12 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            authUserAccountUseCase.execute(viewController: self){
+            authUserAccountUseCase.execute(viewController: self,success: {
                 self.loadTimeLineUseCase.execute()
-            }
+                self.dismiss(animated: true, completion: nil)
+            },error: {
+                self.popAlert(title: "エラー", messege: "連携に失敗しました\n別のアカウントで接続してみるか、時間を空けてください", time: 1.0)
+            })
         case 1:
             present(Router.presentColorSettingView(type: .BACKGROUND), animated: true, completion: nil)
         case 2:

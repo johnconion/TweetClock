@@ -20,4 +20,5 @@ public enum UserDefaultKey:String{
     case TwitterSecret = "twitter_secret"
     case TwitterScreenName = "twitter_screen_name"
     case TwitterUserID = "twitter_user_id"
+    case LoadTimelineLastTime = "load_timeline_last_time"
 }
