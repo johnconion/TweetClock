@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyi-f0-NbJ">
-                                <rect key="frame" x="10" y="254" width="394" height="608"/>
+                                <rect key="frame" x="10" y="260" width="394" height="602"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableView>
@@ -74,7 +74,7 @@
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Kc5-y8-sqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRc-FD-ku7" secondAttribute="trailing" constant="10" id="Kte-qE-PKC"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LaA-Hk-1dY"/>
-                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="Jam-nI-FPu" secondAttribute="bottom" constant="8" id="LwL-Of-PGl"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="Jam-nI-FPu" secondAttribute="bottom" constant="14" id="LwL-Of-PGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x00-AA-hDw" secondAttribute="trailing" constant="20" id="TWh-7v-z1b"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="Tik-kS-Kjx"/>
                             <constraint firstItem="gD6-un-qXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WUg-MY-JgU"/>
