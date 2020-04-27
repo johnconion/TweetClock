@@ -13,11 +13,6 @@ class TweetRepository {
     static func save(dic:[[String: Any?]]){
         let realm = try! Realm()
         
-        try! realm.write{
-            // 全消去して書き込むようにしちゃえ
-            realm.delete(realm.objects(RealmTweet.self))
-        }
-        
         var tweets : [RealmTweet] = []
         
         for tweetDic in dic{
@@ -48,6 +43,10 @@ class TweetRepository {
 
         // トランザクションを開始して、オブジェクトをRealmに追加する
         try! realm.write {
+            if(realm.objects(RealmTweet.self).count >= 50000){
+                // ５万件を超えたら一旦全部消すようにする
+                realm.delete(realm.objects(RealmTweet.self))
+            }
             for tweet in tweets{
                 realm.add(tweet, update: .all)
             }
