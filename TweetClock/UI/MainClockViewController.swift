@@ -104,6 +104,10 @@ class MainClockViewController: UIViewController {
     @IBAction func tapSettingButton(_ sender: Any) {
         self.present(Router.presentSettingsView(), animated: true, completion: nil)
     }
+    
+    @IBAction func tapScroollButton(_ sender: Any) {
+        tweetTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+    }
 }
 
 private extension MainClockViewController{
