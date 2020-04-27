@@ -11,6 +11,7 @@ import RealmSwift
 
 class RealmTweet: Object {
     @objc dynamic var id = ""
+    @objc dynamic var date = Date()
     @objc dynamic var text = ""
     @objc dynamic var favoriteCount = 0
     @objc dynamic var retweetCount = 0

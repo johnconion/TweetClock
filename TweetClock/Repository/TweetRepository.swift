@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SwiftDate
 
 class TweetRepository {
     static func save(dic:[[String: Any?]]){
@@ -19,6 +20,7 @@ class TweetRepository {
             let tweet = RealmTweet()
             
             tweet.id = tweetDic["id_str"] as! String
+            tweet.date = (tweetDic["created_at"] as! String).toDate("EEE MMM dd HH:mm:ss Z yyyy")!.date
             tweet.text = tweetDic["text"] as! String
             tweet.favoriteCount = tweetDic["favorite_count"] as! Int
             tweet.retweetCount = tweetDic["retweet_count"] as! Int
@@ -50,6 +52,15 @@ class TweetRepository {
             for tweet in tweets{
                 realm.add(tweet, update: .all)
             }
+        }
+    }
+    
+    static func deleteAll(){
+        let realm = try! Realm()
+        
+        try! realm.write {
+            // ５万件を超えたら一旦全部消すようにする
+            realm.delete(realm.objects(RealmTweet.self))
         }
     }
 }

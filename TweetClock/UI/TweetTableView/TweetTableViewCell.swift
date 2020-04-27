@@ -12,6 +12,7 @@ import RxCocoa
 
 class TweetTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var relativeTimeLabel: UILabel!
     @IBOutlet weak var userIcon: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetLabel: UILabel!

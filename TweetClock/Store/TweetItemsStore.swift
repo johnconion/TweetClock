@@ -23,7 +23,7 @@ class TweetItemsStore {
     
     private func sharedUpdates() -> Observable<Array<Tweet>> {
         Observable
-            .changeset(from: realm.objects(RealmTweet.self))
+            .changeset(from: realm.objects(RealmTweet.self).sorted(byKeyPath: "date", ascending: false))
             .do(onNext:{self.tweets = self.creatTweetArray(data: $0.0)})
             .map{_ in self.tweets}
     }
@@ -40,7 +40,7 @@ class TweetItemsStore {
 private extension TweetItemsStore{
     func creatTweetArray(data:AnyRealmCollection<RealmTweet>)->[Tweet]{
         return data.map{ d in
-            Tweet(id: d.id, text: d.text, favoriteCount: d.favoriteCount, retweetCount: d.retweetCount, user: TwitterUser(iconUrl: URL(string: d.user!.iconUrl)!, userName: d.user!.userName), images: d.images.map{TwitterImage(imageUrl: URL(string: $0.imageUrl)!)})
+            Tweet(id: d.id, date:d.date, text: d.text, favoriteCount: d.favoriteCount, retweetCount: d.retweetCount, user: TwitterUser(iconUrl: URL(string: d.user!.iconUrl)!, userName: d.user!.userName), images: d.images.map{TwitterImage(imageUrl: URL(string: $0.imageUrl)!)})
         }
     }
 }

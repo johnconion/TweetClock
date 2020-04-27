@@ -37,6 +37,8 @@
 		7C0ACA91245598E70022E987 /* RealmTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA90245598E70022E987 /* RealmTwitterUser.swift */; };
 		7C0ACA93245599070022E987 /* RealmTwitterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA92245599070022E987 /* RealmTwitterImage.swift */; };
 		7C0ACA9624559A9C0022E987 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA9524559A9C0022E987 /* TweetRepository.swift */; };
+		7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */; };
+		7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */; };
 		7C84A07C2453CAF10016AE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07B2453CAF10016AE58 /* AppDelegate.swift */; };
 		7C84A07E2453CAF10016AE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */; };
 		7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */; };
@@ -83,6 +85,8 @@
 		7C0ACA90245598E70022E987 /* RealmTwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTwitterUser.swift; sourceTree = "<group>"; };
 		7C0ACA92245599070022E987 /* RealmTwitterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTwitterImage.swift; sourceTree = "<group>"; };
 		7C0ACA9524559A9C0022E987 /* TweetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
+		7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineUseCase.swift; sourceTree = "<group>"; };
+		7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserAccountUseCase.swift; sourceTree = "<group>"; };
 		7C84A0782453CAF10016AE58 /* TweetClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84A07B2453CAF10016AE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +216,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		7C5163F62456D8B600224CD3 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */,
+				7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		7C84A06F2453CAF10016AE58 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +248,7 @@
 			children = (
 				7C84A07B2453CAF10016AE58 /* AppDelegate.swift */,
 				7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */,
+				7C5163F62456D8B600224CD3 /* UseCase */,
 				7C5163F52456BE3A00224CD3 /* UI */,
 				7C0ACA6D2454788D0022E987 /* Store */,
 				7C0ACA9424559A7D0022E987 /* Repository */,
@@ -411,6 +425,7 @@
 				7CF99D832455A56200C1CC90 /* RealmManeger.swift in Sources */,
 				7C0ACA6A245475720022E987 /* UserDefaultManager.swift in Sources */,
 				7CA8B3AE2455BE1B003A3E17 /* TweetCellBinder.swift in Sources */,
+				7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */,
 				7C0ACA8F2455951B0022E987 /* RealmTweet.swift in Sources */,
 				7C0ACA572453F4100022E987 /* Battery.swift in Sources */,
 				7C0ACA7F2455257F0022E987 /* SwifterWrapper.swift in Sources */,
@@ -424,6 +439,7 @@
 				7C0ACA8C245590AD0022E987 /* TwitterImage.swift in Sources */,
 				7C0ACA91245598E70022E987 /* RealmTwitterUser.swift in Sources */,
 				7C0ACA8A245590A20022E987 /* TwitterUser.swift in Sources */,
+				7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */,
 				7C0ACA93245599070022E987 /* RealmTwitterImage.swift in Sources */,
 				7C0ACA72245478F00022E987 /* BackgroundColorStore.swift in Sources */,
 				7C0ACA76245487030022E987 /* FirstRun.swift in Sources */,

@@ -12,11 +12,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Kingfisher
+import SwiftDate
 
 class TweetCellBinder {
     static func bind(cell:TweetTableViewCell,item:Tweet) -> TweetTableViewCell{
         cell.tweetLabel.text = item.text
         
+        cell.relativeTimeLabel.text = item.relativeDate
         cell.tweetLabel.textColor = TextColorStore.shared.value.getUIColor()
         cell.userIcon.kf.setImage(with: item.user.iconUrl)
         cell.userNameLabel.text = item.user.userName

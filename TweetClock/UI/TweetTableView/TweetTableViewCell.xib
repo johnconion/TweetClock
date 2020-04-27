@@ -30,7 +30,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="くるとん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-Er-8YK">
-                        <rect key="frame" x="48" y="8" width="267" height="15"/>
+                        <rect key="frame" x="48" y="8" width="61.5" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="RI3-aH-zKu"/>
                         </constraints>
@@ -75,10 +75,16 @@
                             <constraint firstAttribute="height" constant="17" id="kaY-eD-NDj"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3分前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JU-XP-kfv">
+                        <rect key="frame" x="271" y="8" width="33" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="eaP-Ty-KIU" firstAttribute="bottom" secondItem="ddV-Nm-zbm" secondAttribute="bottom" id="2dG-L5-mWk"/>
-                    <constraint firstAttribute="trailing" secondItem="bDY-Er-8YK" secondAttribute="trailing" constant="5" id="5x5-ZL-b6K"/>
+                    <constraint firstItem="0JU-XP-kfv" firstAttribute="bottom" secondItem="bDY-Er-8YK" secondAttribute="bottom" id="4lj-AF-Ow1"/>
                     <constraint firstItem="eaP-Ty-KIU" firstAttribute="top" secondItem="ddV-Nm-zbm" secondAttribute="top" id="B8b-5v-EFZ"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uwa-pQ-MPW" secondAttribute="bottom" constant="5" id="CVl-Aa-9Tf"/>
                     <constraint firstItem="imC-4P-3oN" firstAttribute="leading" secondItem="5c5-gp-q91" secondAttribute="trailing" constant="5" id="CpK-us-4m0"/>
@@ -87,7 +93,9 @@
                     <constraint firstAttribute="bottom" secondItem="eaP-Ty-KIU" secondAttribute="bottom" constant="8" id="KWa-gS-jfi"/>
                     <constraint firstItem="bDY-Er-8YK" firstAttribute="top" secondItem="uwa-pQ-MPW" secondAttribute="top" id="Ly9-fQ-jn3"/>
                     <constraint firstItem="imC-4P-3oN" firstAttribute="centerY" secondItem="ddV-Nm-zbm" secondAttribute="centerY" id="M9n-83-3pl"/>
+                    <constraint firstItem="0JU-XP-kfv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bDY-Er-8YK" secondAttribute="trailing" id="O4k-9g-H30"/>
                     <constraint firstItem="uwa-pQ-MPW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Res-P2-Ojm"/>
+                    <constraint firstItem="0JU-XP-kfv" firstAttribute="trailing" secondItem="qZP-ut-UIi" secondAttribute="trailing" id="XZr-E1-C8T"/>
                     <constraint firstItem="qZP-ut-UIi" firstAttribute="leading" secondItem="uwa-pQ-MPW" secondAttribute="trailing" constant="8" id="aMN-Uf-vrD"/>
                     <constraint firstItem="lyV-sP-J34" firstAttribute="leading" secondItem="ddV-Nm-zbm" secondAttribute="trailing" constant="5" id="aUB-CP-6bR"/>
                     <constraint firstItem="eaP-Ty-KIU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qZP-ut-UIi" secondAttribute="bottom" constant="5" id="awV-vv-6xs"/>
@@ -106,6 +114,7 @@
                 <outlet property="img2" destination="lyV-sP-J34" id="qlz-NN-wmh"/>
                 <outlet property="img3" destination="5c5-gp-q91" id="Xzb-Qe-1Ku"/>
                 <outlet property="img4" destination="imC-4P-3oN" id="qPM-wd-okh"/>
+                <outlet property="relativeTimeLabel" destination="0JU-XP-kfv" id="0pw-B8-hXn"/>
                 <outlet property="rtAndFavLabel" destination="eaP-Ty-KIU" id="WdW-MH-zg6"/>
                 <outlet property="tweetLabel" destination="qZP-ut-UIi" id="dQa-4O-2n2"/>
                 <outlet property="userIcon" destination="uwa-pQ-MPW" id="l2H-93-xQi"/>
