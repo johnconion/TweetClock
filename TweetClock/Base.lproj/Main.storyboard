@@ -60,22 +60,82 @@
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="Jam-nI-FPu" secondAttribute="trailing" constant="31" id="0tQ-tr-MHp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyi-f0-NbJ" secondAttribute="trailing" constant="10" id="1IF-uE-j4y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyi-f0-NbJ" secondAttribute="trailing" constant="10" id="2V2-OE-76D"/>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5KR-1f-GRg"/>
+                            <constraint firstItem="Jam-nI-FPu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Tt-zN-0fw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gyi-f0-NbJ" secondAttribute="bottom" constant="10" id="Agq-SK-NH4"/>
                             <constraint firstItem="iRc-FD-ku7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Eu0-66-6QB"/>
+                            <constraint firstItem="Jam-nI-FPu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IDX-aQ-nVB"/>
                             <constraint firstItem="iRc-FD-ku7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="ISV-Sx-yDI"/>
                             <constraint firstItem="x00-AA-hDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="12" id="JN2-cG-RbP"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="x00-AA-hDw" secondAttribute="bottom" constant="10" id="KZ5-qf-Lcb"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Kc5-y8-sqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRc-FD-ku7" secondAttribute="trailing" constant="10" id="Kte-qE-PKC"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LaA-Hk-1dY"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="Jam-nI-FPu" secondAttribute="bottom" constant="8" id="LwL-Of-PGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x00-AA-hDw" secondAttribute="trailing" constant="20" id="TWh-7v-z1b"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="Tik-kS-Kjx"/>
                             <constraint firstItem="gD6-un-qXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WUg-MY-JgU"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="width" secondItem="Jam-nI-FPu" secondAttribute="width" id="eXx-SD-gGv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyi-f0-NbJ" secondAttribute="trailing" constant="10" id="ndf-im-q8E"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="width" secondItem="Jam-nI-FPu" secondAttribute="width" id="pG3-0F-0JC"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="x00-AA-hDw" secondAttribute="bottom" constant="10" id="rd4-nc-cfk"/>
+                            <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="Jam-nI-FPu" secondAttribute="trailing" constant="10" id="riN-6j-m8m"/>
                             <constraint firstItem="Jam-nI-FPu" firstAttribute="top" secondItem="iRc-FD-ku7" secondAttribute="bottom" constant="8" id="u7k-g5-UZP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jam-nI-FPu" secondAttribute="trailing" constant="20" id="xd7-KG-07y"/>
                             <constraint firstItem="gD6-un-qXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zq1-NS-rc8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1IF-uE-j4y"/>
+                                <exclude reference="Agq-SK-NH4"/>
+                                <exclude reference="ndf-im-q8E"/>
+                                <exclude reference="7Tt-zN-0fw"/>
+                                <exclude reference="IDX-aQ-nVB"/>
+                                <exclude reference="0tQ-tr-MHp"/>
+                                <exclude reference="KZ5-qf-Lcb"/>
+                                <exclude reference="Tik-kS-Kjx"/>
+                                <exclude reference="eXx-SD-gGv"/>
+                                <exclude reference="pG3-0F-0JC"/>
+                                <exclude reference="rd4-nc-cfk"/>
+                                <exclude reference="riN-6j-m8m"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="1IF-uE-j4y"/>
+                                <exclude reference="2V2-OE-76D"/>
+                                <include reference="Agq-SK-NH4"/>
+                                <exclude reference="xd7-KG-07y"/>
+                                <exclude reference="ISV-Sx-yDI"/>
+                                <include reference="IDX-aQ-nVB"/>
+                                <include reference="KZ5-qf-Lcb"/>
+                                <exclude reference="Kc5-y8-sqo"/>
+                                <exclude reference="LaA-Hk-1dY"/>
+                                <exclude reference="LwL-Of-PGl"/>
+                                <include reference="pG3-0F-0JC"/>
+                                <include reference="riN-6j-m8m"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="2V2-OE-76D"/>
+                                <include reference="ndf-im-q8E"/>
+                                <exclude reference="xd7-KG-07y"/>
+                                <exclude reference="ISV-Sx-yDI"/>
+                                <include reference="7Tt-zN-0fw"/>
+                                <include reference="0tQ-tr-MHp"/>
+                                <exclude reference="Kc5-y8-sqo"/>
+                                <exclude reference="LaA-Hk-1dY"/>
+                                <exclude reference="LwL-Of-PGl"/>
+                                <include reference="Tik-kS-Kjx"/>
+                                <include reference="eXx-SD-gGv"/>
+                                <include reference="rd4-nc-cfk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="batteryLabel" destination="x00-AA-hDw" id="aA7-dK-ra4"/>
@@ -87,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="90.401785714285708"/>
+            <point key="canvasLocation" x="-7.6461769115442282" y="88.799999999999997"/>
         </scene>
     </scenes>
     <resources>
