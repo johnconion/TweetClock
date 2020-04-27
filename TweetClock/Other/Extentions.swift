@@ -24,7 +24,7 @@ class IndicatorController{
         //開いた時のローディング画面
         overView.frame = CGRect(x: 0, y: 0, width: vc.view.frame.width, height: vc.view.frame.height)
         overView.center = CGPoint(x: vc.view.frame.width/2, y: vc.view.frame.height/2)
-        overView.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.6)
+        overView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
         
         indicator.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         indicator.style = .whiteLarge

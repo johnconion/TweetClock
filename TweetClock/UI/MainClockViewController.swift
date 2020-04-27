@@ -61,7 +61,7 @@ class MainClockViewController: UIViewController {
         
         backgroundColorStore.update().subscribe(){ event in
             let value = event.element!
-            self.view.backgroundColor = UIColor(displayP3Red: value.getRedValue(), green: value.getGreenValue(), blue: value.getBlueValue(), alpha: 1.0)
+            self.view.backgroundColor = value.getUIColor()
         }.disposed(by: disposeBag)
         
         textColorStore.update().subscribe(){ event in

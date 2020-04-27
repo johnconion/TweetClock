@@ -29,11 +29,8 @@ class ColorSettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        color.subscribe(){ _ in
-            self.colorView.backgroundColor = UIColor(displayP3Red: self.color.value.getRedValue(),
-                                                     green: self.color.value.getGreenValue(),
-                                                     blue: self.color.value.getBlueValue(),
-                                                     alpha: 1.0)
+        color.subscribe(){ event in
+            self.colorView.backgroundColor = event.element!.getUIColor()
         }.disposed(by: disposeBag)
         
         setLayout()
@@ -70,11 +67,11 @@ private extension ColorSettingViewController{
         
         if(self.type == ColorSettingType.BACKGROUND){
             color.accept(backgroundColorStore.value)
-            colorView.backgroundColor = UIColor(displayP3Red: backgroundColorStore.value.getRedValue(), green: backgroundColorStore.value.getGreenValue(), blue: backgroundColorStore.value.getBlueValue(), alpha: 1.0)
+            colorView.backgroundColor = backgroundColorStore.value.getUIColor()
             setSlider(r: backgroundColorStore.value.getRedValue(), g: backgroundColorStore.value.getGreenValue(), b: backgroundColorStore.value.getBlueValue())
         }else if(self.type == ColorSettingType.TEXT){
             color.accept(textColorStore.value)
-            colorView.backgroundColor = UIColor(displayP3Red: textColorStore.value.getRedValue(), green: textColorStore.value.getGreenValue(), blue: textColorStore.value.getBlueValue(), alpha: 1.0)
+            colorView.backgroundColor = textColorStore.value.getUIColor()
             setSlider(r: textColorStore.value.getRedValue(), g: textColorStore.value.getGreenValue(), b: textColorStore.value.getBlueValue())
         }
         
