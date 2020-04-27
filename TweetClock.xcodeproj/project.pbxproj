@@ -158,6 +158,7 @@
 				7C0ACA75245487030022E987 /* FirstRun.swift */,
 				7C0ACA7E2455257F0022E987 /* SwifterWrapper.swift */,
 				7CF99D822455A56200C1CC90 /* RealmManeger.swift */,
+				7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -199,6 +200,18 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		7C5163F52456BE3A00224CD3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */,
+				7C0ACA61245462750022E987 /* SettingsTableViewController.swift */,
+				7C0ACA63245463570022E987 /* ColorSettingViewController.swift */,
+				7C0ACA79245489290022E987 /* SplashViewController.swift */,
+				7CF99D842455AE4700C1CC90 /* TweetTableView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		7C84A06F2453CAF10016AE58 = {
 			isa = PBXGroup;
 			children = (
@@ -222,12 +235,7 @@
 			children = (
 				7C84A07B2453CAF10016AE58 /* AppDelegate.swift */,
 				7C84A07D2453CAF10016AE58 /* SceneDelegate.swift */,
-				7C84A07F2453CAF10016AE58 /* MainClockViewController.swift */,
-				7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */,
-				7C0ACA61245462750022E987 /* SettingsTableViewController.swift */,
-				7C0ACA63245463570022E987 /* ColorSettingViewController.swift */,
-				7C0ACA79245489290022E987 /* SplashViewController.swift */,
-				7CF99D842455AE4700C1CC90 /* TweetTableView */,
+				7C5163F52456BE3A00224CD3 /* UI */,
 				7C0ACA6D2454788D0022E987 /* Store */,
 				7C0ACA9424559A7D0022E987 /* Repository */,
 				7C0ACA552453F3F50022E987 /* Domain */,
