@@ -82,12 +82,14 @@ import PKHUD
     }
     
     func getTimeline(){
+        print("~~~ GET TIMELINE ~~~")
         guard let oAuthToken = twitterAccountStore.value.key else { return }
         guard let secret = twitterAccountStore.value.secret else { return }
         let Sw_Token = Credential.OAuthAccessToken(key: oAuthToken, secret: secret)
         let Sw_credential = Credential(accessToken: Sw_Token)
         twitter?.client.credential = Sw_credential
         twitter?.getHomeTimeline(count: 50, success: { json in
+            print("~~~ SUCCESS ~~~")
 //            print(json)
             // 最後にAPIアクセスした時刻を更新
             LoadTimeLineLastTime.update()
@@ -100,6 +102,7 @@ import PKHUD
                 print(error.localizedDescription)
             }
         }, failure: { error in
+            print("~~~ FAILED ~~~")
             print(error)
             print(error.localizedDescription)
             HUD.flash(.labeledError(title: "Twitter API error", subtitle: "時間を空けるか、再度連携し直してください"), delay: 2)

@@ -24,11 +24,9 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkTwitterAcccount()
         
-        twitterAccountStore.update().skip(1).subscribe(){ _ in
+        twitterAccountStore.update().subscribe(){ _ in
             self.checkTwitterAcccount()
-            self.twitter.getTimeline()
         }.disposed(by: disposeBag)
     }
 
@@ -45,11 +43,8 @@ class SettingsTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             authUserAccountUseCase.execute(viewController: self,success: {
-                self.loadTimeLineUseCase.execute()
                 self.dismiss(animated: true, completion: nil)
-            },error: {
-                self.popAlert(title: "エラー", messege: "連携に失敗しました\n別のアカウントで接続してみるか、時間を空けてください", time: 1.0)
-            })
+            },error: {})
         case 1:
             present(Router.presentColorSettingView(type: .BACKGROUND), animated: true, completion: nil)
         case 2:

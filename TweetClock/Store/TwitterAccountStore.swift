@@ -21,7 +21,7 @@ class TwitterAccountStore: ObjectStore {
     var value = TwitterAccount()
     
     func update() -> Observable<TwitterAccount> {
-        Observable.combineLatest(
+        Observable.zip(
             UserDefaults.standard.rx
                 .observe(String.self, UserDefaultKey.TwitterKey.rawValue),
             UserDefaults.standard.rx
@@ -31,7 +31,7 @@ class TwitterAccountStore: ObjectStore {
             UserDefaults.standard.rx
                 .observe(String.self, UserDefaultKey.TwitterScreenName.rawValue)
         )
-            .filter { $0.0.notNil() && $0.1.notNil() && $0.2.notNil() && $0.3.notNil() }
+            .filter { $0.notNil() && $1.notNil() && $2.notNil() && $3.notNil() }
             .map{ TwitterAccount(key: $0.0!, secret: $0.1!, userID: $0.2!, screenName: $0.3!) }
             .do(onNext: {self.value = $0 })
     }

@@ -21,6 +21,7 @@ class AuthUserAccountUseCase: NSObject {
             UserDefaultManager.setValue(key: .TwitterSecret, value: secret)
             UserDefaultManager.setValue(key: .TwitterUserID, value: userID)
             UserDefaultManager.setValue(key: .TwitterScreenName, value: screenName)
+            self.twitter.getTimeline()
             success()
         }, failure: { e in
             print(e!)
