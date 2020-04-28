@@ -11,9 +11,10 @@ import UIKit
 class LoadTimeLineUseCase {
     
     private let twitter = SwifterWrapper.share
+    private let twitterAccountStore = TwitterAccountStore.shared
     
     func execute() {
-        if LoadTimeLineLastTime.inTerm().not() {
+        if LoadTimeLineLastTime.inTerm().not() && twitterAccountStore.value.isLogined() {
             twitter.getTimeline()
         }
     }
