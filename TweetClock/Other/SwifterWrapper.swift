@@ -102,7 +102,7 @@ import PKHUD
         }, failure: { error in
             print(error)
             print(error.localizedDescription)
-            HUD.flash(.labeledError(title: "Twitter API error", subtitle: "時間を開けるか、再度連携し直してください"), delay: 2)
+            HUD.flash(.labeledError(title: "Twitter API error", subtitle: "時間を空けるか、再度連携し直してください"), delay: 2)
         })
     }
 }
