@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import Swifter
+import PKHUD
 
 @objc class SwifterWrapper: NSObject {
     
@@ -99,7 +100,9 @@ import Swifter
                 print(error.localizedDescription)
             }
         }, failure: { error in
-          print(error)
+            print(error)
+            print(error.localizedDescription)
+            HUD.flash(.labeledError(title: "Twitter API error", subtitle: "時間を開けるか、再度連携し直してください"), delay: 2)
         })
     }
 }

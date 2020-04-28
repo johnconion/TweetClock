@@ -2,6 +2,7 @@ PODS:
   - Kingfisher (5.13.4):
     - Kingfisher/Core (= 5.13.4)
   - Kingfisher/Core (5.13.4)
+  - PKHUD (5.3.0)
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
@@ -21,6 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - Kingfisher (~> 5.0)
+  - PKHUD
   - RealmSwift
   - RxCocoa
   - RxRealm
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Kingfisher
+    - PKHUD
     - Realm
     - RealmSwift
     - RxCocoa
@@ -42,6 +45,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -51,6 +55,6 @@ SPEC CHECKSUMS:
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 578a551b3fe01c8083001cbb40e5c438a8b221ff
+PODFILE CHECKSUM: d886ed7101254a22c151930640caf5fcd32a52a6
 
 COCOAPODS: 1.9.1

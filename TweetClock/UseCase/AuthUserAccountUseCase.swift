@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class AuthUserAccountUseCase: NSObject {
     
@@ -23,6 +24,7 @@ class AuthUserAccountUseCase: NSObject {
             success()
         }, failure: { e in
             print(e!)
+            HUD.flash(.labeledError(title: "Twitter API error", subtitle: "時間を開けるか、再度連携し直してください"), delay: 2)
             error()
         })
     }

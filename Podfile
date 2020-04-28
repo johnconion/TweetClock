@@ -13,5 +13,6 @@ target 'TweetClock' do
   pod 'UITextView+Placeholder'
   pod 'SwiftDate'
   pod 'Kingfisher', '~> 5.0'
+  pod 'PKHUD'
 
 end
