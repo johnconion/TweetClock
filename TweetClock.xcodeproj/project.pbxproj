@@ -597,7 +597,8 @@
 			baseConfigurationReference = 7B6CE7D5882E9FF2EB9EC2C7 /* Pods-TweetClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ABHGTY2RG2;
 				INFOPLIST_FILE = TweetClock/Info.plist;
@@ -606,8 +607,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.temp.TweetClock;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.TweetClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TweetClockForDev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -618,7 +620,8 @@
 			baseConfigurationReference = D0AA5134FEB183EB5E6B40F3 /* Pods-TweetClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ABHGTY2RG2;
 				INFOPLIST_FILE = TweetClock/Info.plist;
@@ -627,8 +630,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.temp.TweetClock;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.crouton.TweetClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TweetClockForStore;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
