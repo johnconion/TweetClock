@@ -88,7 +88,7 @@ import PKHUD
         let Sw_Token = Credential.OAuthAccessToken(key: oAuthToken, secret: secret)
         let Sw_credential = Credential(accessToken: Sw_Token)
         twitter?.client.credential = Sw_credential
-        twitter?.getHomeTimeline(count: 50, success: { json in
+        twitter?.getHomeTimeline(count: 200, success: { json in
             print("~~~ SUCCESS ~~~")
 //            print(json)
             // 最後にAPIアクセスした時刻を更新
