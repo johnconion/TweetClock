@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="LSx-OT-gsM">
-                            <rect key="frame" x="0.0" y="212" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="287" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -107,6 +107,51 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="L4s-Iu-oJB">
+                                        <rect key="frame" x="0.0" y="184" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L4s-Iu-oJB" id="97L-cG-bir">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイムラインの読み込みインターバル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLh-Gu-IrK">
+                                                    <rect key="frame" x="20" y="11" width="374" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-Dc-Q95">
+                                                    <rect key="frame" x="310" y="37" width="94" height="32"/>
+                                                </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1分" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-7T-t8n">
+                                                    <rect key="frame" x="277" y="42.5" width="25" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※再起動後に有効になります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgm-K1-gs6">
+                                                    <rect key="frame" x="20" y="44" width="193" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qgm-K1-gs6" firstAttribute="leading" secondItem="97L-cG-bir" secondAttribute="leading" constant="20" id="Cjc-Sg-Sel"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rLh-Gu-IrK" secondAttribute="trailing" id="NUV-dh-EB8"/>
+                                                <constraint firstItem="o2s-Dc-Q95" firstAttribute="centerY" secondItem="qgm-K1-gs6" secondAttribute="centerY" id="UFh-rt-DoD"/>
+                                                <constraint firstItem="oNC-7T-t8n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qgm-K1-gs6" secondAttribute="trailing" constant="8" id="ZoA-Yv-cfA"/>
+                                                <constraint firstItem="rLh-Gu-IrK" firstAttribute="top" secondItem="97L-cG-bir" secondAttribute="topMargin" id="ZuS-dx-6H7"/>
+                                                <constraint firstAttribute="trailing" secondItem="o2s-Dc-Q95" secondAttribute="trailing" constant="10" id="ayJ-Mv-TsD"/>
+                                                <constraint firstItem="o2s-Dc-Q95" firstAttribute="centerY" secondItem="oNC-7T-t8n" secondAttribute="centerY" id="bPo-xF-foV"/>
+                                                <constraint firstAttribute="bottom" secondItem="o2s-Dc-Q95" secondAttribute="bottom" constant="6" id="cBp-8S-moK"/>
+                                                <constraint firstItem="rLh-Gu-IrK" firstAttribute="leading" secondItem="97L-cG-bir" secondAttribute="leadingMargin" id="mt0-rE-8QG"/>
+                                                <constraint firstItem="o2s-Dc-Q95" firstAttribute="top" secondItem="rLh-Gu-IrK" secondAttribute="bottom" id="zk1-3I-KXs"/>
+                                                <constraint firstItem="o2s-Dc-Q95" firstAttribute="leading" secondItem="oNC-7T-t8n" secondAttribute="trailing" constant="8" id="zyh-lh-D8c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -123,12 +168,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="loadTimeIntervalLabel" destination="oNC-7T-t8n" id="p72-1v-mcJ"/>
+                        <outlet property="loadTimelineIntervalStepper" destination="o2s-Dc-Q95" id="OAs-3R-3Ex"/>
                         <outlet property="twitterAccountLabel" destination="Eii-en-a2l" id="KXi-bB-aN7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RV-4L-jFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="2"/>
+            <point key="canvasLocation" x="63.768115942028992" y="1.3392857142857142"/>
         </scene>
     </scenes>
 </document>

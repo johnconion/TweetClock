@@ -15,6 +15,7 @@ public enum UserDefaultKey:String{
     case BackgroundRedColor = "background_red_color"
     case BackgroundGreenColor = "background_green_color"
     case BackgroundBlueColor = "background_blue_color"
+    case LoadTimelineInterval = "load_timeline_interval"
     case FirstRun = "first_run"
     case TwitterKey = "twitter_key"
     case TwitterSecret = "twitter_secret"

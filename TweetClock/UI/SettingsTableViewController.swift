@@ -13,6 +13,17 @@ import RxCocoa
 class SettingsTableViewController: UITableViewController {
 
     @IBOutlet weak var twitterAccountLabel: UILabel!
+    @IBOutlet weak var loadTimelineIntervalStepper: UIStepper!{
+        didSet{
+            loadTimelineIntervalStepper.rx.value.asObservable().skip(1).subscribe(){ v in
+                let value = v.element!
+                print("\(Int(value))分")
+                self.loadTimeIntervalLabel.text = "\(Int(value))分"
+                UserDefaultManager.setValue(key: .LoadTimelineInterval, value: value)
+            }.disposed(by: disposeBag)
+        }
+    }
+    @IBOutlet weak var loadTimeIntervalLabel: UILabel!
     
     private let twitter = SwifterWrapper.share
     private let twitterAccountStore = TwitterAccountStore.shared
@@ -28,6 +39,8 @@ class SettingsTableViewController: UITableViewController {
         twitterAccountStore.update().subscribe(){ _ in
             self.checkTwitterAcccount()
         }.disposed(by: disposeBag)
+        
+        setLoadTimelineInterval()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,7 +48,7 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     // Cell が選択された場合
@@ -61,6 +74,12 @@ class SettingsTableViewController: UITableViewController {
 }
 
 private extension SettingsTableViewController{
+    func setLoadTimelineInterval(){
+        let value = UserDefaultManager.getDouble(key: .LoadTimelineInterval)
+        loadTimelineIntervalStepper.value = value
+        loadTimeIntervalLabel.text = "\(Int(value))分"
+    }
+    
     func checkTwitterAcccount(){
         if twitterAccountStore.value.isLogined(){
             twitterAccountLabel.text = "Twitterアカウント（設定済み）"

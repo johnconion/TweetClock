@@ -18,6 +18,10 @@ class UserDefaultManager {
         UserDefaults().integer(forKey: key.rawValue)
     }
     
+    static func getDouble(key:UserDefaultKey)->Double{
+        UserDefaults().double(forKey: key.rawValue)
+    }
+    
     static func getFloat(key:UserDefaultKey)->Float{
         UserDefaults().float(forKey: key.rawValue)
     }

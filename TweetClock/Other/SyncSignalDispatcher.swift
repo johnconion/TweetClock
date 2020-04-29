@@ -14,6 +14,8 @@ class SyncSignalDispatcher {
     // Singleton
     static let shared = SyncSignalDispatcher()
     private init() {}
+    
+    var loadTimelineInterval : Double = UserDefaultManager.getDouble(key: .LoadTimelineInterval)
 
     var clockTimer: Observable<Int> {
         Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
@@ -22,7 +24,7 @@ class SyncSignalDispatcher {
     }
     
     var tweetTimer: Observable<Int> {
-        Observable<Int>.interval(60.0, scheduler: MainScheduler.instance)
+        Observable<Int>.interval(loadTimelineInterval, scheduler: MainScheduler.instance)
         .startWith(0)
         .share(replay: 1)
     }
