@@ -43,12 +43,10 @@ class TweetRepository {
             tweets.append(tweet)
         }
 
-        // トランザクションを開始して、オブジェクトをRealmに追加する
+        // トランザクションを開始
         try! realm.write {
-            if(realm.objects(RealmTweet.self).count >= 50000){
-                // ５万件を超えたら一旦全部消すようにする
-                realm.delete(realm.objects(RealmTweet.self))
-            }
+            // 毎回保存しているツイートを消去するようにする
+            realm.delete(realm.objects(RealmTweet.self))
             for tweet in tweets{
                 realm.add(tweet, update: .all)
             }
