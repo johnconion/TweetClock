@@ -24,7 +24,7 @@ class SyncSignalDispatcher {
     }
     
     var tweetTimer: Observable<Int> {
-        Observable<Int>.interval(loadTimelineInterval, scheduler: MainScheduler.instance)
+        Observable<Int>.interval(loadTimelineInterval * 60, scheduler: MainScheduler.instance)
         .startWith(0)
         .share(replay: 1)
     }
