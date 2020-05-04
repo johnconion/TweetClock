@@ -63,7 +63,7 @@
                                     <action selector="tapScroollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBW-7J-1xl"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IY-Vp-Ke6" customClass="GADBannerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IY-Vp-Ke6" customClass="CustomBannarView" customModule="TweetClock" customModuleProvider="target">
                                 <rect key="frame" x="10" y="802" width="384" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="C9l-Iq-coZ"/>
@@ -187,7 +187,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerHeight" destination="C9l-Iq-coZ" id="Wfd-Mb-VI1"/>
-                        <outlet property="bannerView" destination="5IY-Vp-Ke6" id="QHq-Xr-Eg8"/>
+                        <outlet property="bannerView" destination="5IY-Vp-Ke6" id="vhZ-LX-ELz"/>
                         <outlet property="batteryLabel" destination="x00-AA-hDw" id="aA7-dK-ra4"/>
                         <outlet property="dateLabel" destination="iRc-FD-ku7" id="vtO-gL-h0S"/>
                         <outlet property="settingsButton" destination="gD6-un-qXP" id="8PT-ih-B5A"/>

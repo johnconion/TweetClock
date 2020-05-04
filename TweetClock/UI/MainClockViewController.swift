@@ -28,10 +28,9 @@ class MainClockViewController: UIViewController {
         }
     }
     
-    @IBOutlet var bannerView: GADBannerView!{
+    @IBOutlet var bannerView: CustomBannarView!{
         didSet{
-            let bannerViewHolder = CustomBannarHolder(bannerView: bannerView)
-            bannerViewHolder.set(adID: .UNDER_THE_TIMELINE, rootViewController: self)
+            bannerView.set(adID: .UNDER_THE_TIMELINE, rootViewController: self)
         }
     }
     

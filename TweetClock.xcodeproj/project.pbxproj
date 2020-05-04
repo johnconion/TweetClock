@@ -36,7 +36,7 @@
 		7C0ACA91245598E70022E987 /* RealmTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA90245598E70022E987 /* RealmTwitterUser.swift */; };
 		7C0ACA93245599070022E987 /* RealmTwitterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA92245599070022E987 /* RealmTwitterImage.swift */; };
 		7C0ACA9624559A9C0022E987 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ACA9524559A9C0022E987 /* TweetRepository.swift */; };
-		7C37D003245FFE5000DFA6B3 /* CustomBannarHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D002245FFE5000DFA6B3 /* CustomBannarHolder.swift */; };
+		7C37D003245FFE5000DFA6B3 /* CustomBannarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D002245FFE5000DFA6B3 /* CustomBannarView.swift */; };
 		7C37D0072460005200DFA6B3 /* BannarIdKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D0062460005200DFA6B3 /* BannarIdKind.swift */; };
 		7C37D00B2460078100DFA6B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C37D00A2460078100DFA6B3 /* GoogleService-Info.plist */; };
 		7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */; };
@@ -89,7 +89,7 @@
 		7C0ACA90245598E70022E987 /* RealmTwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTwitterUser.swift; sourceTree = "<group>"; };
 		7C0ACA92245599070022E987 /* RealmTwitterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTwitterImage.swift; sourceTree = "<group>"; };
 		7C0ACA9524559A9C0022E987 /* TweetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
-		7C37D002245FFE5000DFA6B3 /* CustomBannarHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBannarHolder.swift; sourceTree = "<group>"; };
+		7C37D002245FFE5000DFA6B3 /* CustomBannarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBannarView.swift; sourceTree = "<group>"; };
 		7C37D0062460005200DFA6B3 /* BannarIdKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannarIdKind.swift; sourceTree = "<group>"; };
 		7C37D00A2460078100DFA6B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineUseCase.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		7C37D0052460004200DFA6B3 /* Bannar */ = {
 			isa = PBXGroup;
 			children = (
-				7C37D002245FFE5000DFA6B3 /* CustomBannarHolder.swift */,
+				7C37D002245FFE5000DFA6B3 /* CustomBannarView.swift */,
 				7C37D0062460005200DFA6B3 /* BannarIdKind.swift */,
 			);
 			path = Bannar;
@@ -463,7 +463,7 @@
 				7C0ACA74245479080022E987 /* TextColorStore.swift in Sources */,
 				7C0ACA5E245452770022E987 /* Router.swift in Sources */,
 				7CF99D812455A43300C1CC90 /* TweetItemsStore.swift in Sources */,
-				7C37D003245FFE5000DFA6B3 /* CustomBannarHolder.swift in Sources */,
+				7C37D003245FFE5000DFA6B3 /* CustomBannarView.swift in Sources */,
 				7C84A0802453CAF10016AE58 /* MainClockViewController.swift in Sources */,
 				7C0ACA7A245489290022E987 /* SplashViewController.swift in Sources */,
 				7C0ACA6824546E3F0022E987 /* Color.swift in Sources */,
