@@ -10,6 +10,7 @@ import UIKit
 import IQKeyboardManagerSwift
 import Swifter
 import Firebase
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         SwifterWrapper.share.setup(consumerKey: TWITTER_CONSUMER_KEY, consumerSecret: TWITTER_CONSUMER_SECRET)
         FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
     // MARK: UISceneSession Lifecycle

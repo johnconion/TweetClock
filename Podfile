@@ -16,5 +16,5 @@ target 'TweetClock' do
   pod 'SwiftDate'
   pod 'Kingfisher', '~> 5.0'
   pod 'PKHUD'
-
+  pod 'Google-Mobile-Ads-SDK'
 end

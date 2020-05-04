@@ -11,6 +11,7 @@ import SwiftDate
 import RxCocoa
 import RxSwift
 import Swifter
+import GoogleMobileAds
 
 class MainClockViewController: UIViewController {
     
@@ -26,6 +27,15 @@ class MainClockViewController: UIViewController {
             tweetTableView.dataSource = tweetTableViewDataSourc
         }
     }
+    
+    @IBOutlet var bannerView: GADBannerView!{
+        didSet{
+            let bannerViewHolder = CustomBannarHolder(bannerView: bannerView)
+            bannerViewHolder.set(adID: .UNDER_THE_TIMELINE, rootViewController: self)
+        }
+    }
+    
+    @IBOutlet var bannerHeight: NSLayoutConstraint!
     
     private var tweetTableViewDelegate = TweetTableViewDelegate()
     private let tweetTableViewDataSourc = TweetTableViewDataSource()
@@ -107,6 +117,7 @@ class MainClockViewController: UIViewController {
     
     @IBAction func tapScroollButton(_ sender: Any) {
         tweetTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        bannerHeight.constant = 0
     }
 }
 

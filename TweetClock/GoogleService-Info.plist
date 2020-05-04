@@ -32,5 +32,7 @@
 	<string>1:420464695765:ios:9c3e50d0785021b70e055c</string>
 	<key>DATABASE_URL</key>
 	<string>https://tweetclock-for-ios.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-7614390186769636~3750449962</string>
 </dict>
 </plist>
