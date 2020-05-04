@@ -304,6 +304,7 @@
 				7C84A0752453CAF10016AE58 /* Frameworks */,
 				7C84A0762453CAF10016AE58 /* Resources */,
 				509D7CBDCC1F074EC5CC29FD /* [CP] Embed Pods Frameworks */,
+				7C37CFFF245FAC0800DFA6B3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -390,6 +391,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TweetClock/Pods-TweetClock-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7C37CFFF245FAC0800DFA6B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		879237C8B3BCFBD675FD4AF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -6,6 +6,8 @@ target 'TweetClock' do
   use_frameworks!
 
   # Pods for TweetClock
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
   pod 'RealmSwift'
   pod 'RxRealm'
   pod 'RxSwift'
@@ -14,6 +16,5 @@ target 'TweetClock' do
   pod 'SwiftDate'
   pod 'Kingfisher', '~> 5.0'
   pod 'PKHUD'
-  pod 'Firebase/Analytics'
 
 end
