@@ -9,6 +9,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SwiftyStoreKit
+import StoreKit.SKError
 
 class SettingsTableViewController: UITableViewController {
 
@@ -48,7 +50,7 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     // Cell が選択された場合
@@ -62,6 +64,12 @@ class SettingsTableViewController: UITableViewController {
             present(Router.presentColorSettingView(type: .BACKGROUND), animated: true, completion: nil)
         case 2:
             present(Router.presentColorSettingView(type: .TEXT), animated: true, completion: nil)
+        case 4:
+            popDialog3Red(title: "確認", messege: "課金することで、アプリ内の広告を消去できます", okString: "購入する", defaultString: "リストア", cancelString: "キャンセル", okFunc: {
+                PurchaseManager.shared.purchase(vc: self, purchese: .adRemove)
+            }, defaultFunc: {
+                PurchaseManager.shared.restore(vc: self, purchese: .adRemove)
+            }, cancelFunc: {})
         default:
             print("Error")
         }
@@ -85,4 +93,22 @@ private extension SettingsTableViewController{
             twitterAccountLabel.text = "Twitterアカウント（設定済み）"
         }
     }
+}
+
+extension SettingsTableViewController:PurchaseDelegate{
+    func purchaseSuccsess(purchase: PurchaseManager.Purcheses) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func restoreSuccsess(purchase: PurchaseManager.Purcheses) {
+        popAlert_comp(title: "お知らせ", messege: "復元が完了しました", time: 1.5){
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func purchaseError(errorCode: SKError) {
+        print(errorCode)
+    }
+    
+    func purchaseComplation() {}
 }

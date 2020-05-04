@@ -17,4 +17,5 @@ target 'TweetClock' do
   pod 'Kingfisher', '~> 5.0'
   pod 'PKHUD'
   pod 'Google-Mobile-Ads-SDK'
+  pod 'SwiftyStoreKit'
 end

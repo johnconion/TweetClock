@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="LSx-OT-gsM">
-                            <rect key="frame" x="0.0" y="287" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="339" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -148,6 +148,29 @@
                                                 <constraint firstItem="rLh-Gu-IrK" firstAttribute="leading" secondItem="97L-cG-bir" secondAttribute="leadingMargin" id="mt0-rE-8QG"/>
                                                 <constraint firstItem="o2s-Dc-Q95" firstAttribute="top" secondItem="rLh-Gu-IrK" secondAttribute="bottom" id="zk1-3I-KXs"/>
                                                 <constraint firstItem="o2s-Dc-Q95" firstAttribute="leading" secondItem="oNC-7T-t8n" secondAttribute="trailing" constant="8" id="zyh-lh-D8c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="52" id="tM3-qj-1zW">
+                                        <rect key="frame" x="0.0" y="259" width="414" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tM3-qj-1zW" id="Vj5-J6-sz4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="広告消去" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-Ze-p8K">
+                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bWh-Ze-p8K" secondAttribute="trailing" id="7Q6-ob-rhc"/>
+                                                <constraint firstItem="bWh-Ze-p8K" firstAttribute="top" secondItem="Vj5-J6-sz4" secondAttribute="topMargin" id="RxB-qA-PMe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bWh-Ze-p8K" secondAttribute="bottom" id="bkJ-zv-kDh"/>
+                                                <constraint firstItem="bWh-Ze-p8K" firstAttribute="leading" secondItem="Vj5-J6-sz4" secondAttribute="leadingMargin" id="hzY-6p-d0w"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

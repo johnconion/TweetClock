@@ -39,6 +39,7 @@
 		7C37D003245FFE5000DFA6B3 /* CustomBannarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D002245FFE5000DFA6B3 /* CustomBannarView.swift */; };
 		7C37D0072460005200DFA6B3 /* BannarIdKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D0062460005200DFA6B3 /* BannarIdKind.swift */; };
 		7C37D00B2460078100DFA6B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C37D00A2460078100DFA6B3 /* GoogleService-Info.plist */; };
+		7C37D00D24603E8B00DFA6B3 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D00C24603E8B00DFA6B3 /* PurchaseManager.swift */; };
 		7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */; };
 		7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */; };
 		7C5163FC2456FC3E00224CD3 /* LoadTimeLineLastTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */; };
@@ -92,6 +93,7 @@
 		7C37D002245FFE5000DFA6B3 /* CustomBannarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBannarView.swift; sourceTree = "<group>"; };
 		7C37D0062460005200DFA6B3 /* BannarIdKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannarIdKind.swift; sourceTree = "<group>"; };
 		7C37D00A2460078100DFA6B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C37D00C24603E8B00DFA6B3 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineUseCase.swift; sourceTree = "<group>"; };
 		7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserAccountUseCase.swift; sourceTree = "<group>"; };
 		7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineLastTime.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				7C0ACA7E2455257F0022E987 /* SwifterWrapper.swift */,
 				7CF99D822455A56200C1CC90 /* RealmManeger.swift */,
 				7C0ACA512453D2860022E987 /* SyncSignalDispatcher.swift */,
+				7C37D00C24603E8B00DFA6B3 /* PurchaseManager.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				7C0ACA6A245475720022E987 /* UserDefaultManager.swift in Sources */,
 				7CA8B3AE2455BE1B003A3E17 /* TweetCellBinder.swift in Sources */,
 				7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */,
+				7C37D00D24603E8B00DFA6B3 /* PurchaseManager.swift in Sources */,
 				7C0ACA8F2455951B0022E987 /* RealmTweet.swift in Sources */,
 				7C0ACA572453F4100022E987 /* Battery.swift in Sources */,
 				7C0ACA7F2455257F0022E987 /* SwifterWrapper.swift in Sources */,

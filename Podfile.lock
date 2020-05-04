@@ -98,6 +98,7 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - SwiftDate (6.1.0)
+  - SwiftyStoreKit (0.15.0)
   - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
@@ -111,6 +112,7 @@ DEPENDENCIES:
   - RxRealm
   - RxSwift
   - SwiftDate
+  - SwiftyStoreKit
   - "UITextView+Placeholder"
 
 SPEC REPOS:
@@ -139,6 +141,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SwiftDate
+    - SwiftyStoreKit
     - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
@@ -166,8 +169,9 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 88697591844f7f001addbcb38d619ced55036393
+PODFILE CHECKSUM: f9abde972c9f7d0e5fc77c9f22d6a8e0febf3cc8
 
 COCOAPODS: 1.9.1

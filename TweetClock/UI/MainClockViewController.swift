@@ -116,7 +116,6 @@ class MainClockViewController: UIViewController {
     
     @IBAction func tapScroollButton(_ sender: Any) {
         tweetTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
-        bannerHeight.constant = 0
     }
 }
 
@@ -127,6 +126,10 @@ private extension MainClockViewController{
         settingsButton.setButtonColor(image: UIImage(named: "settings.png")!, color: .label)
         tweetTableView.separatorInset = .zero
         tweetTableView.layoutMargins = .zero
+        
+        if PurchaseManager.shared.checkPurchased(purchase: .adRemove){
+            bannerHeight.constant = 0
+        }
     }
     
     private func reloadView(){

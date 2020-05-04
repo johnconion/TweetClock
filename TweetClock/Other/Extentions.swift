@@ -165,14 +165,14 @@ extension UIViewController {
             okFunc()
         })
         
-        let defaultAction: UIAlertAction = UIAlertAction(title: defaultString, style: UIAlertAction.Style.destructive, handler:{
+        let defaultAction: UIAlertAction = UIAlertAction(title: defaultString, style: UIAlertAction.Style.default, handler:{
             // ボタンが押された時の処理を書く（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             defaultFunc()
         })
         
         // キャンセルボタン
-        let cancelAction: UIAlertAction = UIAlertAction(title: cancelString, style: UIAlertAction.Style.cancel, handler:{
+        let cancelAction: UIAlertAction = UIAlertAction(title: cancelString, style: UIAlertAction.Style.destructive, handler:{
             // ボタンが押された時の処理を書く（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             cancelFunc()

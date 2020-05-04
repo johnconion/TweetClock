@@ -11,6 +11,7 @@ import IQKeyboardManagerSwift
 import Swifter
 import Firebase
 import GoogleMobileAds
+import SwiftyStoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SwifterWrapper.share.setup(consumerKey: TWITTER_CONSUMER_KEY, consumerSecret: TWITTER_CONSUMER_SECRET)
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            for purchase in purchases {
+                switch purchase.transaction.transactionState {
+                case .purchased, .restored:
+                    if purchase.needsFinishTransaction {
+                        // Deliver content from server, then:
+                        SwiftyStoreKit.finishTransaction(purchase.transaction)
+                    }
+                    // Unlock content
+                case .failed, .purchasing, .deferred:
+                    break // do nothing
+                @unknown default:
+                    print("default")
+                }
+            }
+        }
+        
         return true
     }
     // MARK: UISceneSession Lifecycle
