@@ -19,6 +19,6 @@ class FirstRun {
         UserDefaultManager.setValue(key: .BackgroundRedColor, value: Float(0.0))
         UserDefaultManager.setValue(key: .BackgroundGreenColor, value: Float(0.3))
         UserDefaultManager.setValue(key: .BackgroundBlueColor, value: Float(0.45))
-        UserDefaultManager.setValue(key: .LoadTimelineInterval,value: 1.0)
+        UserDefaults().set(false, forKey: PurchaseManager.Purcheses.adRemove.rawValue)
     }
 }

@@ -47,12 +47,16 @@ class MainClockViewController: UIViewController {
     private let backgroundColorStore = BackgroundColorStore.shared
     private let textColorStore = TextColorStore.shared
     private let tweetItemsStore = TweetItemsStore.shared
+    private let userStatusStore = UserStatusStore.shared
+    
     private let loadTimeLineUseCase = LoadTimeLineUseCase()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setLayout()
+        
+        print("WASSA",UserDefaults().bool(forKey: PurchaseManager.Purcheses.adRemove.rawValue))
         
         syncSignalDispatcher
             .clockTimer
@@ -86,6 +90,14 @@ class MainClockViewController: UIViewController {
             self.tweetTableView.reloadData()
             self.tweetTableView.isHidden = false
         }.disposed(by: disposeBag)
+        
+        userStatusStore.update()
+            .subscribe(onNext: { (value) in
+                if value.isPurchasedAdRemove{
+                    self.bannerHeight.constant = 0
+                }
+           }).disposed(by: disposeBag)
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -115,7 +127,9 @@ class MainClockViewController: UIViewController {
     }
     
     @IBAction func tapScroollButton(_ sender: Any) {
-        tweetTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        if tweetItemsStore.size() != 0{
+            tweetTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
     }
 }
 
@@ -126,10 +140,6 @@ private extension MainClockViewController{
         settingsButton.setButtonColor(image: UIImage(named: "settings.png")!, color: .label)
         tweetTableView.separatorInset = .zero
         tweetTableView.layoutMargins = .zero
-        
-        if PurchaseManager.shared.checkPurchased(purchase: .adRemove){
-            bannerHeight.constant = 0
-        }
     }
     
     private func reloadView(){
