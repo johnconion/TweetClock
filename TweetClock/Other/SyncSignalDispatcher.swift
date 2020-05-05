@@ -19,13 +19,20 @@ class SyncSignalDispatcher {
 
     var clockTimer: Observable<Int> {
         Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
-        .startWith(0)
-        .share(replay: 1)
+            .startWith(0)
+            .share(replay: 1)
     }
     
     var tweetTimer: Observable<Int> {
         Observable<Int>.interval(loadTimelineInterval * 60 + 1, scheduler: MainScheduler.instance)
-        .startWith(0)
-        .share(replay: 1)
+            .startWith(0)
+            .share(replay: 1)
+    }
+    
+    var interstisialTimer: Observable<Int> {
+        Observable<Int>.interval(900, scheduler: MainScheduler.instance)
+            .startWith(0)
+            .delay(1, scheduler: MainScheduler.instance)
+            .share(replay: 1)
     }
 }
