@@ -48,7 +48,7 @@ class MainClockViewController: UIViewController {
     private let textColorStore = TextColorStore.shared
     private let tweetItemsStore = TweetItemsStore.shared
     private let userStatusStore = UserStatusStore.shared
-    private let interstisialPresenter = InterstisialPresenter.shared
+    private let interstitialPresenter = InterstitialPresenter.shared
     
     private let loadTimeLineUseCase = LoadTimeLineUseCase()
 
@@ -75,10 +75,10 @@ class MainClockViewController: UIViewController {
             }).disposed(by: disposeBag)
         
         syncSignalDispatcher
-            .interstisialTimer
+            .interstitialTimer
             .subscribe(onNext: { [weak self] _ in
                 guard self != nil else { return }
-                self!.interstisialPresenter.presentInterstitial(rootViewController: self!)
+                self!.interstitialPresenter.presentInterstitial(rootViewController: self!)
             }).disposed(by: disposeBag)
         
         backgroundColorStore.update().subscribe(){ event in

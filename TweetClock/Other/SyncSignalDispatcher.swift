@@ -29,9 +29,10 @@ class SyncSignalDispatcher {
             .share(replay: 1)
     }
     
-    var interstisialTimer: Observable<Int> {
-        Observable<Int>.interval(900, scheduler: MainScheduler.instance)
+    var interstitialTimer: Observable<Int> {
+        Observable<Int>.interval(10, scheduler: MainScheduler.instance)
             .startWith(0)
+            .filter{ _ in UserStatusStore.shared.value.isPurchasedAdRemove.not() } // 広告消去を買っているユーザーはストリームを流さない
             .delay(1, scheduler: MainScheduler.instance)
             .share(replay: 1)
     }

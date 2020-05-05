@@ -9,10 +9,10 @@
 import UIKit
 import GoogleMobileAds
 
-class InterstisialPresenter {
+class InterstitialPresenter {
     
     // 自動的に遅延初期化される(初回アクセスのタイミングでインスタンス生成)
-    static let shared = InterstisialPresenter()
+    static let shared = InterstitialPresenter()
     
     private var interstitial:GADInterstitial!
     

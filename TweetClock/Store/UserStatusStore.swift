@@ -18,7 +18,7 @@ class UserStatusStore: ObjectStore {
     
     typealias T = UserStatus
     
-    var value: UserStatus = UserStatus(isPurchasedAdRemove: false)
+    var value: UserStatus = UserStatus(isPurchasedAdRemove: UserDefaults().bool(forKey: PurchaseManager.Purcheses.adRemove.rawValue))
     
     func update() -> Observable<UserStatus> {
         UserDefaults.standard.rx
