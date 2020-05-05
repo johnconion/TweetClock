@@ -16,4 +16,8 @@ class CustomBannarView: GADBannerView{
         self.rootViewController = rootViewController
         self.load(GADRequest())
     }
+    
+    func load(){
+        self.load(GADRequest())
+    }
 }

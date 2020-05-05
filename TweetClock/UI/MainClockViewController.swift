@@ -79,6 +79,7 @@ class MainClockViewController: UIViewController {
             .subscribe(onNext: { [weak self] _ in
                 guard self != nil else { return }
                 self!.interstitialPresenter.presentInterstitial(rootViewController: self!)
+                self!.bannerView.load()
             }).disposed(by: disposeBag)
         
         backgroundColorStore.update().subscribe(){ event in
