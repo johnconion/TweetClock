@@ -43,6 +43,7 @@
 		7C37D00F2460476A00DFA6B3 /* UserStatusStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D00E2460476A00DFA6B3 /* UserStatusStore.swift */; };
 		7C37D0112460477E00DFA6B3 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D0102460477E00DFA6B3 /* UserStatus.swift */; };
 		7C37D0132460EAEC00DFA6B3 /* InterstitialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D0122460EAEC00DFA6B3 /* InterstitialPresenter.swift */; };
+		7C37D0152466341100DFA6B3 /* AdTermUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37D0142466341100DFA6B3 /* AdTermUtil.swift */; };
 		7C5163F82456D8FA00224CD3 /* LoadTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */; };
 		7C5163FA2456D90E00224CD3 /* AuthUserAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */; };
 		7C5163FC2456FC3E00224CD3 /* LoadTimeLineLastTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */; };
@@ -100,6 +101,7 @@
 		7C37D00E2460476A00DFA6B3 /* UserStatusStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusStore.swift; sourceTree = "<group>"; };
 		7C37D0102460477E00DFA6B3 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		7C37D0122460EAEC00DFA6B3 /* InterstitialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialPresenter.swift; sourceTree = "<group>"; };
+		7C37D0142466341100DFA6B3 /* AdTermUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdTermUtil.swift; sourceTree = "<group>"; };
 		7C5163F72456D8FA00224CD3 /* LoadTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineUseCase.swift; sourceTree = "<group>"; };
 		7C5163F92456D90E00224CD3 /* AuthUserAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserAccountUseCase.swift; sourceTree = "<group>"; };
 		7C5163FB2456FC3E00224CD3 /* LoadTimeLineLastTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTimeLineLastTime.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		7C37D0042460003B00DFA6B3 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				7C37D0142466341100DFA6B3 /* AdTermUtil.swift */,
 				7C37D0052460004200DFA6B3 /* Bannar */,
 			);
 			path = Ads;
@@ -498,6 +501,7 @@
 				7C0ACA542453E8770022E987 /* Clock.swift in Sources */,
 				7C0ACA83245536E20022E987 /* TwitterAccount.swift in Sources */,
 				7C0ACA6C2454759D0022E987 /* UserDefaultKey.swift in Sources */,
+				7C37D0152466341100DFA6B3 /* AdTermUtil.swift in Sources */,
 				7C0ACA8C245590AD0022E987 /* TwitterImage.swift in Sources */,
 				7C0ACA91245598E70022E987 /* RealmTwitterUser.swift in Sources */,
 				7C37D0112460477E00DFA6B3 /* UserStatus.swift in Sources */,

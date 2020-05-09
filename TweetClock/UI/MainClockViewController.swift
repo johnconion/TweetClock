@@ -30,6 +30,10 @@ class MainClockViewController: UIViewController {
     
     @IBOutlet var bannerView: CustomBannarView!{
         didSet{
+            print(AdTermUtil.shared.getAdRemoveTermDay())
+            if AdTermUtil.shared.adRemove {
+                bannerHeight.constant = 0.0
+            }
             bannerView.set(adID: .UNDER_THE_TIMELINE, rootViewController: self)
         }
     }
@@ -78,8 +82,10 @@ class MainClockViewController: UIViewController {
             .interstitialTimer
             .subscribe(onNext: { [weak self] _ in
                 guard self != nil else { return }
-                self!.interstitialPresenter.presentInterstitial(rootViewController: self!)
-                self!.bannerView.load()
+                if AdTermUtil.shared.adRemove.not() {
+                    self!.interstitialPresenter.presentInterstitial(rootViewController: self!)
+                    self!.bannerView.load()
+                }
             }).disposed(by: disposeBag)
         
         backgroundColorStore.update().subscribe(){ event in

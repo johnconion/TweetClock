@@ -20,5 +20,6 @@ class FirstRun {
         UserDefaultManager.setValue(key: .BackgroundGreenColor, value: Float(0.3))
         UserDefaultManager.setValue(key: .BackgroundBlueColor, value: Float(0.45))
         UserDefaults().set(false, forKey: PurchaseManager.Purcheses.adRemove.rawValue)
+        AdTermUtil.shared.initAdRemoveDate()
     }
 }
