@@ -63,6 +63,9 @@ class MainClockViewController: UIViewController {
         
         print("WASSA",UserDefaults().bool(forKey: PurchaseManager.Purcheses.adRemove.rawValue))
         
+        // 画面ロックをしない
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
         syncSignalDispatcher
             .clockTimer
             .subscribe(onNext: { [weak self] _ in
