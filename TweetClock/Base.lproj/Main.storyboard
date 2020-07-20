@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04/25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-FD-ku7">
-                                <rect key="frame" x="15" y="77" width="389" height="29"/>
+                                <rect key="frame" x="15" y="74" width="389" height="29"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19：54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jam-nI-FPu">
-                                <rect key="frame" x="20" y="114" width="374" height="90"/>
+                                <rect key="frame" x="20" y="111" width="374" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="4Dl-yz-ACn"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD6-un-qXP">
-                                <rect key="frame" x="15" y="12" width="40" height="40"/>
+                                <rect key="frame" x="15" y="9" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oT2-hx-9Ta"/>
                                     <constraint firstAttribute="width" constant="40" id="tkd-8A-RTH"/>
@@ -52,13 +52,13 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyi-f0-NbJ">
-                                <rect key="frame" x="10" y="218" width="394" height="584"/>
+                                <rect key="frame" x="10" y="215" width="394" height="587"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sji-t7-XjJ">
-                                <rect key="frame" x="55" y="44" width="304" height="33"/>
+                                <rect key="frame" x="55" y="44" width="304" height="30"/>
                                 <connections>
                                     <action selector="tapScroollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBW-7J-1xl"/>
                                 </connections>
@@ -92,7 +92,6 @@
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Kc5-y8-sqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRc-FD-ku7" secondAttribute="trailing" constant="10" id="Kte-qE-PKC"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="top" secondItem="Jam-nI-FPu" secondAttribute="bottom" constant="14" id="LwL-Of-PGl"/>
-                            <constraint firstItem="x00-AA-hDw" firstAttribute="top" secondItem="gD6-un-qXP" secondAttribute="top" id="MZX-oA-YbV"/>
                             <constraint firstItem="sji-t7-XjJ" firstAttribute="leading" secondItem="Gyi-f0-NbJ" secondAttribute="leading" id="RX9-y7-6rg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x00-AA-hDw" secondAttribute="trailing" constant="20" id="TWh-7v-z1b"/>
                             <constraint firstItem="Gyi-f0-NbJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="Tik-kS-Kjx"/>
