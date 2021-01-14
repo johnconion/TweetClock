@@ -22,7 +22,7 @@ class PurchaseManager: NSObject {
     private let userDefault = UserDefaults()
     
     public enum Purcheses : String{
-        case adRemove = "adRemove"
+        case adRemove = "tokyo.crouton.tweetclock.ad_remover"
     }
     
     func purchase(vc:PurchaseDelegate,purchese:Purcheses){
