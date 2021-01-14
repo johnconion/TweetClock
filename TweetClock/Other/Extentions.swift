@@ -27,7 +27,7 @@ class IndicatorController{
         overView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
         
         indicator.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        indicator.style = .whiteLarge
+        indicator.style = UIActivityIndicatorView.Style.large
         indicator.center = vc.view.center
         
         vc.view.addSubview(overView)

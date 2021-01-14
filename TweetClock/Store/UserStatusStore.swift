@@ -25,7 +25,7 @@ class UserStatusStore: ObjectStore {
             .observe(Bool.self, PurchaseManager.Purcheses.adRemove.rawValue)
             .distinctUntilChanged()
             .map{_ in PurchaseManager.shared.checkPurchased(purchase: .adRemove)}
-            .map{ UserStatus(isPurchasedAdRemove: $0!) }
+            .map{ UserStatus(isPurchasedAdRemove: $0) }
             .do(onNext: { self.value = $0 })
     }
 }

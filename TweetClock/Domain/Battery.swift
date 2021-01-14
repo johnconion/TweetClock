@@ -14,7 +14,6 @@ class Battery {
         UIDevice.current.isBatteryMonitoringEnabled = true
         let batRemain = UIDevice.current.batteryLevel
         return NSString(format: "%.0f", batRemain * 100) as String + "%"
-        UIDevice.current.isBatteryMonitoringEnabled = false
     }
     
     func getBatteryStatus() -> BatteryStatus{
@@ -26,7 +25,6 @@ class Battery {
         default:
             return .NOT_CHARGING
         }
-        UIDevice.current.isBatteryMonitoringEnabled = false
     }
         
     enum BatteryStatus {
